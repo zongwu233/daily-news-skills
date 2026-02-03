@@ -34,8 +34,8 @@ Daily News Skills is a collection of AI agent skills focused on generating high-
 ## Install
 
 ```bash
-git clone <your-repo-url>
-cd erduo-skills
+git clone git@github.com:zongwu233/daily-news-skills.git
+cd daily-news-skills
 ```
 
 ## Usage

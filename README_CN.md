@@ -34,8 +34,8 @@ Daily News Skills 是一个面向 AI Agent 的技能仓库，专注于生成高�
 ## 安装
 
 ```bash
-git clone <your-repo-url>
-cd erduo-skills
+git clone git@github.com:zongwu233/daily-news-skills.git
+cd daily-news-skills
 ```
 
 ## 使用方式

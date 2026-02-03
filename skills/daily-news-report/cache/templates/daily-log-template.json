@@ -1,0 +1,153 @@
+{
+  "schema_version": "2.0",
+  "description": "Daily News Report 每日运行日志模板",
+  
+  "run_info": {
+    "date": "YYYY-MM-DD",
+    "run_id": "run_YYYYMMDD_XXX",
+    "timestamp": "ISO 8601 timestamp",
+    "duration_seconds": 0,
+    "phase": "initializing | fetching_tier1 | fetching_tier2 | fetching_tier3 | processing | generating | done"
+  },
+  
+  "summary": {
+    "sources_fetched": 0,
+    "items_collected": 0,
+    "items_published": 0,
+    "items_deduped": 0,
+    "quality_avg": 0.0,
+    "status": "pending | success | failed | partial"
+  },
+  
+  "sources": {
+    "comment": "各信源抓取结果，source_id 对应 sources.json 中的 id",
+    
+    "hn": {
+      "status": "pending | success | failed",
+      "items_collected": 0,
+      "items_published": 0,
+      "avg_quality": 0.0,
+      "duration_ms": 0,
+      "error": null,
+      "urls_fetched": []
+    },
+    
+    "hf_papers": {
+      "status": "pending | success | failed",
+      "items_collected": 0,
+      "items_published": 0,
+      "avg_quality": 0.0,
+      "duration_ms": 0,
+      "error": null,
+      "urls_fetched": []
+    },
+    
+    "producthunt": {
+      "status": "pending | success | failed",
+      "items_collected": 0,
+      "items_published": 0,
+      "avg_quality": 0.0,
+      "duration_ms": 0,
+      "error": null,
+      "urls_fetched": []
+    },
+    
+    "hackernoon_pm": {
+      "status": "pending | success | failed",
+      "items_collected": 0,
+      "items_published": 0,
+      "avg_quality": 0.0,
+      "duration_ms": 0,
+      "error": null,
+      "urls_fetched": []
+    },
+    
+    "jamesclear": {
+      "status": "pending | success | failed",
+      "items_collected": 0,
+      "items_published": 0,
+      "avg_quality": 0.0,
+      "duration_ms": 0,
+      "error": null,
+      "urls_fetched": []
+    },
+    
+    "fs_blog": {
+      "status": "pending | success | failed",
+      "items_collected": 0,
+      "items_published": 0,
+      "avg_quality": 0.0,
+      "duration_ms": 0,
+      "error": null,
+      "urls_fetched": []
+    },
+    
+    "scottyoung": {
+      "status": "pending | success | failed",
+      "items_collected": 0,
+      "items_published": 0,
+      "avg_quality": 0.0,
+      "duration_ms": 0,
+      "error": null,
+      "urls_fetched": []
+    },
+    
+    "stripe_blog": {
+      "status": "pending | success | failed",
+      "items_collected": 0,
+      "items_published": 0,
+      "avg_quality": 0.0,
+      "duration_ms": 0,
+      "error": null,
+      "urls_fetched": []
+    },
+    
+    "paulgraham": {
+      "status": "pending | success | failed",
+      "items_collected": 0,
+      "items_published": 0,
+      "avg_quality": 0.0,
+      "duration_ms": 0,
+      "error": null,
+      "urls_fetched": []
+    },
+    
+    "dmitrybrant": {
+      "status": "pending | success | failed",
+      "items_collected": 0,
+      "items_published": 0,
+      "avg_quality": 0.0,
+      "duration_ms": 0,
+      "error": null,
+      "urls_fetched": []
+    }
+  },
+  
+  "url_cache": {
+    "comment": "本日抓取的所有URL，用于去重",
+    "urls": []
+  },
+  
+  "content_hashes": {
+    "comment": "内容指纹，用于跨日去重",
+    "hashes": {}
+  },
+  
+  "articles": {
+    "comment": "本日收录的所有文章数据",
+    "items": []
+  },
+  
+  "errors": {
+    "comment": "运行过程中的所有错误信息",
+    "items": []
+  },
+  
+  "metadata": {
+    "comment": "附加元数据",
+    "environment": "local | production",
+    "agent_version": "3.0",
+    "worker_count": 0,
+    "parallel_enabled": false
+  }
+}

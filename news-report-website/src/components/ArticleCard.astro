@@ -1,0 +1,64 @@
+---
+const { title, summary, tags, quality } = Astro.props;
+
+const qualityStars = Array(Math.round(quality)).fill(() => '⭐');
+
+const tagsList = Array.isArray(tags) ? tags : [tags];
+const qualityColor = quality >= 4.5 ? 'text-green-400' : 
+                   quality >= 3.5 ? 'text-yellow-400' : 
+                   'text-red-400';
+
+---
+
+<article class="bg-gray-900 rounded-xl p-6 shadow-lg border border border-gray-800 hover:border-gray-700 transition-colors duration-200">
+  <div class="flex items-start justify-between mb-3">
+    <div class="flex items-center gap-3">
+      <div class={`px-3 py-1 rounded-full ${qualityColor} bg-opacity-10`}>
+        <span class="text-white font-bold text-sm">Q{quality}</span>
+      </div>
+      <div class="flex-1 overflow-hidden">
+        <h2 class="text-xl font-bold text-white mb-2 line-clamp-2 leading-tight">
+          {title}
+        </h2>
+        <p class="text-gray-400 text-sm leading-relaxed line-clamp-3">
+          {summary}
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="flex flex-wrap gap-2 mb-4">
+    {tagsList.map(tag => (
+      <span class="px-3 py-1 bg-blue-500/10 text-blue-400 rounded-full text-sm font-medium">
+        {tag}
+      </span>
+    ))}
+  </div>
+  
+  <div class="flex items-center gap-6 mb-4 text-gray-500">
+    <div class="flex items-center gap-2">
+      <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M12 21.35l-1.45-1.45M5.5 12 21.35c-1.45 1.45M5.5a1 1 0 0 1.41-.91.91 0-.2.15 0H13.91c.91 0 1.41-.91.91.91 2.34c2.34c2.34 0-4.51 0-.91-9.09a11 9.09 9.09a11 9.09 0-9.09-5.91 1.41 1.41 1.41 0 11.09-11.09 11.09-11.09s17 7.98c7.98 7.98 7.98c3.31 3.31 3.31-3.31 5.91 0-.91-9.09a11 9.09 11.09 11.09 11.09 0-11.09-11.09s17 7.98c7.98 7.98 7.98c3.31 3.31 3.31 3.31 5.91 0-.91-9.09a11 9.09 11.09 11.09 11.09 0-11.09-11.09s17 7.98c7.98 7.98 7.98c3.31 3.31 3.31 3.31 5.91 0-.91-9.09a11 9.09 11.09 11.09 11.09 0-11.09-11.09s17 7.98c7.98 7.98 7.98c3.31 3.31 3.31 3.31 5.91 0-.91-9.09a11 9.09 11.09 11.09 11.09 0-11.09-11.09s17 7.98c7.98 7.98 7.98c3.31 3.31 3.31 3.31 5.91 0-.91-9.09a11 9.09 11.09 11.09 11.09 0-11.09-11.09s17 7.98c7.98 7.98 7.98c3.31 3.31 3.31 3.31 5.91 0-.91-9.09a11 9.09 11.09 11.09 11.09 0-11.09-11.09z"/>
+      </svg>
+      <span class="text-sm">{title}</span>
+    </div>
+    <a href={`/archive/${title}`} class="text-sm text-blue-400 hover:text-blue-300 transition-colors">
+      查看详情 →
+    </a>
+  </div>
+</article>
+
+<style>
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-clamp: 2;
+  }
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    line-clamp: 3;
+  }
+</style>

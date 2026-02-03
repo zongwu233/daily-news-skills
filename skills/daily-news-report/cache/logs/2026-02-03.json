@@ -1,0 +1,93 @@
+{
+  "schema_version": "2.0",
+  "description": "Daily News Report 每日运行日志",
+  "run_info": {
+    "date": "2026-02-03",
+    "run_id": "run_2026-02-03_001",
+    "timestamp": "2026-02-03T04:21:52Z",
+    "duration_seconds": 0,
+    "phase": "initializing"
+  },
+  "summary": {
+    "sources_fetched": 0,
+    "items_collected": 0,
+    "items_published": 0,
+    "items_deduped": 0,
+    "quality_avg": 0.0,
+    "status": "pending"
+  },
+  "sources": {
+    "hn": {
+      "status": "pending",
+      "items_collected": 0,
+      "avg_quality": 0.0
+    },
+    "hf_papers": {
+      "status": "pending",
+      "items_collected": 0,
+      "avg_quality": 0.0
+    },
+    "producthunt": {
+      "status": "pending",
+      "items_collected": 0,
+      "avg_quality": 0.0
+    },
+    "hackernoon_pm": {
+      "status": "pending",
+      "items_collected": 0,
+      "avg_quality": 0.0
+    },
+    "jamesclear": {
+      "status": "pending",
+      "items_collected": 0,
+      "avg_quality": 0.0
+    },
+    "fs_blog": {
+      "status": "pending",
+      "items_collected": 0,
+      "avg_quality": 0.0
+    },
+    "scottyoung": {
+      "status": "pending",
+      "items_collected": 0,
+      "avg_quality": 0.0
+    },
+    "stripe_blog": {
+      "status": "pending",
+      "items_collected": 0,
+      "avg_quality": 0.0
+    },
+    "paulgraham": {
+      "status": "pending",
+      "items_collected": 0,
+      "avg_quality": 0.0
+    },
+    "dmitrybrant": {
+      "status": "pending",
+      "items_collected": 0,
+      "avg_quality": 0.0
+    }
+  },
+  "url_cache": {
+    "comment": "本日抓取的所有URL，用于去重",
+    "urls": []
+  },
+  "content_hashes": {
+    "comment": "内容指纹，用于跨日去重",
+    "hashes": {}
+  },
+  "articles": {
+    "comment": "本日收录的所有文章数据",
+    "items": []
+  },
+  "errors": {
+    "comment": "运行过程中的所有错误信息",
+    "items": []
+  },
+  "metadata": {
+    "environment": "local",
+    "agent_version": "3.0",
+    "worker_count": 1,
+    "parallel_enabled": false
+  }
+}

@@ -1,0 +1,43 @@
+---
+const { tag, count } = Astro.props;
+
+const tagColors = {
+  AI: 'bg-purple-500',
+  编程: 'bg-blue-500',
+  产品: 'bg-green-500',
+  产品管理: 'bg-orange-500',
+  金融: 'bg-yellow-500',
+};
+
+---
+
+<div class="mb-8">
+  <h2 class="text-2xl font-bold text-white mb-4">🏷️ Tags Cloud</h2>
+  
+  <div class="flex flex-wrap gap-3">
+    {Object.entries({
+      'AI': { count: 15 },
+      '编程': { count: 23 },
+      '产品': { count: 8 },
+      '产品管理': { count: 12 },
+      '金融': { count: 7 },
+    }).map(([tagName, { count: tagCount }]) => (
+      <button 
+        key={tagName}
+        class="px-4 py-2 rounded-lg bg-opacity-20 hover:bg-opacity-30 transition-all duration-200"
+        style={tagColors[tagName as keyof typeof tagColors] || 'bg-gray-700'}
+      >
+        <div class="text-white text-center">
+          <div class="text-2xl font-bold">{tagCount}</div>
+          <div class="text-sm opacity-90">{tagName}</div>
+        </div>
+      </button>
+    ))}
+  </div>
+</div>
+
+<style>
+  button:hover {
+    transform: scale(1.05);
+  }
+</style>

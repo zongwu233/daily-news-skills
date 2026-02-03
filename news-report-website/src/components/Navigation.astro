@@ -1,0 +1,150 @@
+---
+const { currentPath } = Astro.props;
+
+const basePath = import.meta.env.BASE_URL ?? '/';
+const base = basePath.endsWith('/') ? basePath.slice(0, -1) : basePath;
+
+const navItems = [
+  { name: '📚 归档', href: `${base}/archive` },
+  { name: '📅 Tags', href: `${base}/tags` },
+  { name: '⚙️ 设置', href: `${base}/settings` },
+];
+
+---
+
+<nav class="site-nav border-b border-gray-800">
+  <div class="max-w-7xl mx-auto px-4 py-4">
+    <div class="flex items-center justify-between">
+      <div class="flex items-center gap-6">
+        <a href={base || '/'} class="text-2xl font-bold text-white hover:text-blue-400 transition-colors flex items-center gap-2">
+          📰 News Report
+        </a>
+        <div class="hidden md:flex md:items-center gap-6">
+          {navItems.map(item => (
+            <a 
+              href={item.href}
+              class={`text-sm text-gray-400 hover:text-white transition-colors ${
+                currentPath === item.href ? 'text-white' : ''
+              }`}
+            >
+              {item.name}
+            </a>
+          ))}
+        </div>
+      </div>
+
+      <div class="flex items-center gap-3">
+        <button
+          type="button"
+          class="theme-toggle inline-flex items-center gap-2 rounded-full px-3 py-2 text-sm border border-gray-800 text-gray-400 hover:text-white hover:border-gray-700 transition-colors"
+          aria-label="Toggle theme"
+          aria-pressed="false"
+          data-theme-toggle
+        >
+          <span class="theme-toggle__icon" aria-hidden="true">
+            <svg data-theme-icon="sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="4" />
+              <path d="M12 2v2" />
+              <path d="M12 20v2" />
+              <path d="M4.93 4.93l1.41 1.41" />
+              <path d="M17.66 17.66l1.41 1.41" />
+              <path d="M2 12h2" />
+              <path d="M20 12h2" />
+              <path d="M4.93 19.07l1.41-1.41" />
+              <path d="M17.66 6.34l1.41-1.41" />
+            </svg>
+            <svg data-theme-icon="moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+            </svg>
+          </span>
+          <span class="hidden sm:inline" data-theme-label>Light</span>
+        </button>
+
+        <div class="md:hidden">
+          <button 
+            class="text-white hover:text-blue-400 transition-colors"
+            aria-label="Menu"
+          >
+            ☰
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<script is:inline>
+  (() => {
+    const STORAGE_KEY = 'theme';
+    const root = document.documentElement;
+    const buttons = () => Array.from(document.querySelectorAll('[data-theme-toggle]'));
+
+    const readTheme = () => (root.dataset.theme === 'dark' ? 'dark' : 'light');
+    const writeTheme = (theme) => {
+      root.dataset.theme = theme;
+      root.style.colorScheme = theme;
+      try {
+        localStorage.setItem(STORAGE_KEY, theme);
+      } catch {}
+
+      const isDark = theme === 'dark';
+      for (const btn of buttons()) {
+        btn.setAttribute('aria-pressed', String(isDark));
+        const label = btn.querySelector('[data-theme-label]');
+        if (label) label.textContent = isDark ? 'Dark' : 'Light';
+      }
+    };
+
+    const sync = () => {
+      const theme = readTheme();
+      const isDark = theme === 'dark';
+      for (const btn of buttons()) {
+        btn.setAttribute('aria-pressed', String(isDark));
+        const label = btn.querySelector('[data-theme-label]');
+        if (label) label.textContent = isDark ? 'Dark' : 'Light';
+      }
+    };
+
+    document.addEventListener('click', (e) => {
+      const btn = e.target?.closest?.('[data-theme-toggle]');
+      if (!btn) return;
+      e.preventDefault();
+      writeTheme(readTheme() === 'dark' ? 'light' : 'dark');
+    });
+
+    window.addEventListener('storage', (e) => {
+      if (e.key !== STORAGE_KEY) return;
+      const next = e.newValue === 'dark' ? 'dark' : 'light';
+      writeTheme(next);
+    });
+
+    sync();
+  })();
+</script>
+
+<style>
+  .site-nav {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: var(--nav-bg);
+    backdrop-filter: saturate(1.2) blur(12px);
+  }
+
+  html[data-theme='light'] [data-theme-icon='moon'] {
+    display: none;
+  }
+
+  html[data-theme='dark'] [data-theme-icon='sun'] {
+    display: none;
+  }
+
+  .theme-toggle {
+    line-height: 1;
+  }
+
+  .theme-toggle:focus-visible {
+    outline: 2px solid var(--link);
+    outline-offset: 3px;
+  }
+</style>

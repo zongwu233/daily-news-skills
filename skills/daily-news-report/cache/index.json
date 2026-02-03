@@ -1,0 +1,22 @@
+{
+  "schema_version": "2.0",
+  "description": "Daily News Report 缓存系统索引文件，记录所有运行历史和元数据",
+  "last_updated": "2026-02-03T04:21:52Z",
+  "total_runs": 52,
+  "available_dates": [
+    "2026-02-03",
+    "2026-02-02"
+  ],
+  "summary": {
+    "avg_duration_seconds": 390,
+    "avg_items_per_run": 35,
+    "avg_quality_score": 4.4,
+    "most_productive_source": "hackernews",
+    "most_reliable_source": "huggingface_papers"
+  },
+  "config": {
+    "cache_retention_days": 7,
+    "enable_auto_cleanup": true,
+    "cache_directory": "./cache/logs/"
+  }
+}

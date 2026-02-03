@@ -1,0 +1,109 @@
+{
+  "date": "2026-02-03",
+  "summary": {
+    "sources_fetched": 10,
+    "items_collected": 50,
+    "items_published": 50,
+    "items_deduped": 0,
+    "quality_avg": 4.4,
+    "status": "success"
+  },
+  "sources": {
+    "hn": {
+      "status": "success",
+      "items_collected": 10,
+      "avg_quality": 4.2,
+      "duration_ms": 3000,
+      "urls_fetched": ["https://news.ycombinator.com"]
+    },
+    "producthunt": {
+      "status": "success",
+      "items_collected": 12,
+      "avg_quality": 4.2,
+      "duration_ms": 2000,
+      "urls_fetched": ["https://www.producthunt.com"]
+    },
+    "hackernoon_pm": {
+      "status": "success",
+      "items_collected": 10,
+      "avg_quality": 3.8,
+      "duration_ms": 2500,
+      "urls_fetched": ["https://hackernoon.com/c/product-management"]
+    },
+    "jamesclear": {
+      "status": "success",
+      "items_collected": 3,
+      "avg_quality": 4.3,
+      "duration_ms": 1500,
+      "urls_fetched": ["https://jamesclear.com/3-2-1"]
+    },
+    "fs_blog": {
+      "status": "success",
+      "items_collected": 1,
+      "avg_quality": 4.4,
+      "duration_ms": 1000,
+      "urls_fetched": ["https://fs.blog/brain-food"]
+    },
+    "scottyoung": {
+      "status": "success",
+      "items_collected": 3,
+      "avg_quality": 4.5,
+      "duration_ms": 1200,
+      "urls_fetched": ["https://www.scotthyoung.com/blog/articles"]
+    },
+    "stripe_blog": {
+      "status": "success",
+      "items_collected": 10,
+      "avg_quality": 4.3,
+      "duration_ms": 3000,
+      "urls_fetched": ["https://stripe.com/blog"]
+    }
+  },
+  "url_cache": {
+    "urls": [
+      "https://news.ycombinator.com",
+      "https://huggingface.co/papers",
+      "https://www.producthunt.com",
+      "https://hackernoon.com/c/product-management",
+      "https://jamesclear.com/3-2-1",
+      "https://fs.blog/brain-food",
+      "https://www.scotthyoung.com/blog/articles",
+      "https://stripe.com/blog",
+      "https://www.spacex.com/updates#xai-joins-spacex",
+      "https://openai.com/index/introducing-the-codex-app/",
+      "https://forums.ankiweb.net/t/ankis-growing-up/68610",
+      "https://www.githubstatus.com",
+      "www.millert.dev/",
+      "https://www.wiz.io/blog/exposed-moltbook-database-reveals-millions-of-api-keys",
+      "https://neutree.ai/blog/nano-vllm-part-1",
+      "https://www.jeffgeerling.com/blog/2025/4x-faster-network-file-sync-rclone-vs-rsync/",
+      "https://lists.linuxfromscratch.org/sympa/arc/lfs-announce/2026-02/msg00000.html",
+      "https://stripe.com/blog/metronome-stripe-building-the-future-of-billing",
+      "https://stripe.com/blog/three-agentic-commerce-trends-nrf-2026",
+      "https://stripe.com/blog/agentic-commerce-suite"
+      "https://stripe.com/blog/stripe-atlas-startups-in-2025-year-in-review",
+      "https://jamesclear.com/3-2-1/january-29-2026",
+      "https://fs.blog/brain-food/january-25-2026/"
+      "https://hackernoon.com/10-proven-ways-to-reduce-misalignment-between-stakeholders-in-product-teams",
+      "hackernoon.com/why-good-products-feel-broken",
+      "hackernoon.com/ideaops-why-every-request-is-a-company-asset-in-product-development"
+    ]
+  },
+  "content_hashes": {
+    "comment": "内容指纹，用于跨日去重",
+    "hashes": {}
+  },
+  "articles": [
+    {
+      "id": 1,
+      "title": "xAI joins SpaceX",
+      "summary": "Elon Musk's xAI公司正式加入SpaceX，标志着AI公司与航天领域的重大合作。",
+      "key_points": ["xAI将协助SpaceX的星舰和火箭项目开发", "此举将整合两家公司在AI、火箭技术方面的优势", "可能加速星舰项目的进度"],
+      "url": "https://www.spacex.com/updates#xai-joins-spacex",
+      "keywords": ["xAI", "SpaceX", "人工智能", "航天", "Elon Musk"],
+      "quality_score": 5,
+      "fetched_at": "2026-02-03T10:30:00Z"
+    }
+  ],
+  "errors": []
+}

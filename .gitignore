@@ -1,0 +1,14 @@
+.DS_Store
+node_modules/
+dist/
+.env
+.astro/
+coverage/
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.env.*
+*.log
+news-report-website/node_modules/
+news-report-website/dist/
+news-report-website/.astro/

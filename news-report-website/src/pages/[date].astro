@@ -1,0 +1,38 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+export async function getStaticPaths() {
+  const getDateFromFile = (filePath) => {
+    const fileName = filePath.split('/').pop() || '';
+    return fileName.replace('-news-report.md', '').replace('.md', '');
+  };
+
+  const reportModules = import.meta.glob('../../../NewsReport/*.md');
+  const reportEntries = await Promise.all(
+    Object.entries(reportModules).map(async ([path, loader]) => ({
+      path,
+      report: await loader(),
+    }))
+  );
+
+  return reportEntries.map(({ path, report }) => ({
+    params: { date: getDateFromFile(path) },
+    props: { report },
+  }));
+}
+
+const { report } = Astro.props;
+const { date } = Astro.params;
+const Content = report.default;
+---
+
+<Layout title={`Daily News Report - ${date}`}>
+  <main class="max-w-5xl mx-auto px-4 py-8">
+    <div class="mb-6">
+      <h1 class="text-3xl font-bold text-white">📅 {date}</h1>
+    </div>
+    <div class="report-content bg-gray-900 rounded-xl p-6 border border-gray-800">
+      <Content />
+    </div>
+  </main>
+</Layout>

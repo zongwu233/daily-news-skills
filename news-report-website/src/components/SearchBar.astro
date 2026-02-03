@@ -1,0 +1,45 @@
+---
+const { query } = Astro.props;
+
+---
+
+<div class="mb-4">
+  <div class="flex gap-2 items-center">
+    <input 
+      type="text" 
+      placeholder="搜索文章标题或标签..."
+      value={query || ''}
+      oninput={(e) => {
+        const newQuery = e.currentTarget.value;
+        const url = new URLSearchParams(window.location.search);
+        if (newQuery) {
+          url.set('q', newQuery);
+        url.set('page', '1');
+        } else {
+          url.delete('q');
+          url.delete('page');
+        }
+        window.location.search = url.toString();
+      }}
+      class="px-4 py-3 bg-gray-900 text-white rounded-lg border border-gray-700 focus:ring-2 focus:border-blue-500 focus:outline-none transition-all duration-200"
+      style="width: 100%; max-width: 600px;"
+    />
+    <button 
+      onclick={() => {
+        const url = new URLSearchParams(window.location.search);
+        url.delete('q');
+        url.delete('page');
+        window.location.search = url.toString();
+      }}
+      class="px-4 py-3 bg-gray-800 text-white rounded-lg border border-gray-600 hover:bg-gray-700 transition-all duration-200"
+    >
+      重置
+    </button>
+  </div>
+</div>
+
+<style>
+  input:focus {
+    outline: none;
+  }
+</style>

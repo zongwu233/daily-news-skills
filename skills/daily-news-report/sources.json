@@ -1,0 +1,322 @@
+{
+  "version": "2.2",
+  "last_updated": "2026-02-02",
+
+  "sources": {
+    "tier1": {
+      "description": "高命中率源，优先抓取",
+      "batch_a": [
+        {
+          "id": "hn",
+          "name": "Hacker News",
+          "url": "https://news.ycombinator.com",
+          "fetch_method": "webfetch",
+          "extract": "top_10",
+          "enabled": true,
+          "avg_quality": 4.5,
+          "success_rate": 0.95
+        },
+        {
+          "id": "hf_papers",
+          "name": "HuggingFace Papers",
+          "url": "https://huggingface.co/papers",
+          "fetch_method": "webfetch",
+          "extract": "top_voted",
+          "enabled": true,
+          "avg_quality": 4.8,
+          "success_rate": 0.98
+        }
+      ],
+      "batch_b": [
+        {
+          "id": "one_useful_thing",
+          "name": "One Useful Thing",
+          "url": "https://www.oneusefulthing.org",
+          "fetch_method": "webfetch",
+          "extract": "latest_3",
+          "enabled": true,
+          "avg_quality": 4.7,
+          "success_rate": 0.92
+        },
+        {
+          "id": "dmitrybrant",
+          "name": "Dmitry Brant Blog",
+          "url": "https://dmitrybrant.com",
+          "fetch_method": "webfetch",
+          "extract": "latest_3",
+          "enabled": true,
+          "avg_quality": 4.9,
+          "success_rate": 0.95
+        },
+        {
+          "id": "paul_graham",
+          "name": "Paul Graham Essays",
+          "url": "https://paulgraham.com/articles.html",
+          "fetch_method": "webfetch",
+          "extract": "latest_5",
+          "enabled": true,
+          "avg_quality": 4.6,
+          "success_rate": 0.99
+        }
+      ]
+    },
+
+      "tier2": {
+      "description": "中等命中率，按需抓取",
+      "batch_a": [
+        {
+          "id": "james_clear",
+          "name": "James Clear 3-2-1",
+          "url": "https://jamesclear.com/3-2-1",
+          "fetch_method": "webfetch",
+          "extract": "latest_issue",
+          "enabled": true,
+          "avg_quality": 4.3,
+          "success_rate": 0.90
+        },
+        {
+          "id": "fs_blog",
+          "name": "Farnam Street Brain Food",
+          "url": "https://fs.blog/brain-food",
+          "fetch_method": "webfetch",
+          "extract": "latest_issue",
+          "enabled": true,
+          "avg_quality": 4.4,
+          "success_rate": 0.88
+        }
+      ],
+      "batch_b": [
+        {
+          "id": "producthunt",
+          "name": "Product Hunt",
+          "url": "https://www.producthunt.com",
+          "fetch_method": "webfetch",
+          "extract": "today_top_5",
+          "enabled": true,
+          "avg_quality": 4.2,
+          "success_rate": 0.75,
+          "note": "尝试使用 WebFetch 替代浏览器"
+        },
+        {
+          "id": "hackernoon_pm",
+          "name": "HackerNoon PM",
+          "url": "https://hackernoon.com/c/product-management",
+          "fetch_method": "webfetch",
+          "extract": "latest_5",
+          "enabled": true,
+          "avg_quality": 3.8,
+          "success_rate": 0.85
+        },
+        {
+          "id": "scotthyoung",
+          "name": "Scott Young Blog",
+          "url": "https://scotthyoung.com/blog/articles",
+          "fetch_method": "webfetch",
+          "extract": "latest_3",
+          "enabled": true,
+          "avg_quality": 4.0,
+          "success_rate": 0.90
+        },
+        {
+          "id": "kent_dodds",
+          "name": "Kent C. Dodds Blog",
+          "url": "https://blog.stripe.com/kentcdodds",
+          "fetch_method": "webfetch",
+          "extract": "latest_3",
+          "enabled": true,
+          "avg_quality": 4.3,
+          "success_rate": 0.88
+        },
+        {
+          "id": "dan_abramov",
+          "name": "Dan Abramov Blog",
+          "url": "https://danabramov.com/blog",
+          "fetch_method": "webfetch",
+          "extract": "latest_3",
+          "enabled": true,
+          "avg_quality": 4.2,
+          "success_rate": 0.85
+        },
+        {
+          "id": "julia_evans",
+          "name": "Julia Evans Blog",
+          "url": "https://jvns.ca/blog",
+          "fetch_method": "webfetch",
+          "extract": "latest_3",
+          "enabled": true,
+          "avg_quality": 4.1,
+          "success_rate": 0.87
+        }
+      ]
+    },
+
+    "tier3_browser": {
+      "description": "需要浏览器渲染的源或尝试WebFetch",
+      "sources": [
+        {
+          "id": "producthunt",
+          "name": "Product Hunt",
+          "url": "https://www.producthunt.com",
+          "fetch_method": "webfetch",
+          "extract": "today_top_10",
+          "enabled": true,
+          "avg_quality": 4.2,
+          "success": 0.75,
+          "note": "尝试使用WebFetch替代浏览器"
+        },
+        {
+          "id": "techcrunch",
+          "name": "TechCrunch",
+          "url": "https://techcrunch.com",
+          "fetch_method": "webfetch",
+          "extract": "latest_10",
+          "enabled": true,
+          "avg_quality": 4.0,
+          "success_rate": 0.80,
+          "note": "科技新闻和创业资讯"
+        },
+        {
+          "id": "indiehack",
+          "name": "Indie Hackers",
+          "url": "https://indiehackers.com",
+          "fetch_method": "webfetch",
+          "extract": "latest_10",
+          "enabled": true,
+          "avg_quality": 4.3,
+          "success_rate": 0.85,
+          "note": "独立黑客和开发者社区"
+        },
+        {
+          "id": "devto",
+          "name": "Dev.to",
+          "url": "https://dev.to",
+          "fetch_method": "webfetch",
+          "extract": "trending_10",
+          "enabled": true,
+          "avg_quality": 4.1,
+          "success_rate": 0.88,
+          "note": "开发者社区和博客聚合"
+        },
+        {
+          "id": "hackernews",
+          "name": "Hacker News",
+          "url": "https://hackernews.io",
+          "fetch_method": "webfetch",
+          "extract": "latest_10",
+          "enabled": true,
+          "avg_quality": 4.2,
+          "success_rate": 0.82,
+          "note": "技术和安全新闻聚合"
+        },
+        {
+          "id": "ycombinator",
+          "name": "Y Combinator",
+          "url": "https://news.ycombinator.com",
+          "fetch_method": "webfetch",
+          "extract": "top_10",
+          "enabled": true,
+          "avg_quality": 4.4,
+          "success_rate": 0.90,
+          "note": "科技新闻和讨论"
+        },
+        {
+          "id": "lobsters",
+          "name": "Lobsters",
+          "url": "https://lobste.rs",
+          "fetch_method": "webfetch",
+          "extract": "latest_10",
+          "enabled": true,
+          "avg_quality": 4.3,
+          "success_rate": 0.86,
+          "note": "开发者和技术社区"
+        },
+        {
+          "id": "theverge",
+          "name": "The Verge",
+          "url": "https://theverge.com",
+          "fetch_method": "webfetch",
+          "extract": "latest_10",
+          "enabled": true,
+          "avg_quality": 4.2,
+          "success_rate": 0.85,
+          "note": "科技新闻和产品评测"
+        },
+        {
+          "id": "smashingmagazine",
+          "name": "Smashing Magazine",
+          "url": "https://www.smashingmagazine.com",
+          "fetch_method": "webfetch",
+          "extract": "latest_5",
+          "enabled": true,
+          "avg_quality": 4.1,
+          "success_rate": 0.87,
+          "note": "前端和设计博客"
+        },
+        {
+          "id": "css-tricks",
+          "name": "CSS-Tricks",
+          "url": "https://css-tricks.com",
+          "fetch_method": "webfetch",
+          "extract": "latest_10",
+          "enabled": true,
+          "avg_quality": 4.0,
+          "success_rate": 0.84,
+          "note": "CSS和前端技术"
+        }
+      ]
+    },
+
+    "disabled": {
+      "description": "已禁用的源（失效或低质量）",
+      "sources": [
+        {
+          "id": "tldr_ai",
+          "name": "TLDR AI",
+          "url": "https://tldr.tech/ai",
+          "reason": "订阅页面，无文章列表",
+          "disabled_date": "2026-01-21"
+        },
+        {
+          "id": "bensbites",
+          "name": "Ben's Bites",
+          "url": "https://bensbites.com/archive",
+          "reason": "需要登录/付费墙",
+          "disabled_date": "2026-01-21"
+        },
+        {
+          "id": "interconnects",
+          "name": "Interconnects AI",
+          "url": "https://interconnects.ai",
+          "reason": "内容提取失败，Substack 结构问题",
+          "disabled_date": "2026-01-21"
+        },
+        {
+          "id": "beehiiv_rss",
+          "name": "Beehiiv RSS feeds",
+          "url": "https://rss.beehiiv.com",
+          "reason": "RSS 抓取困难",
+          "disabled_date": "2026-01-21"
+        }
+      ]
+    }
+  },
+
+  "fetch_config": {
+    "webfetch": {
+      "timeout_ms": 30000,
+      "retry_count": 1,
+      "cache_ttl_minutes": 60
+    },
+    "browser": {
+      "timeout_ms": 45000,
+      "wait_for_selector": "article, .post, .item",
+      "screenshot_on_error": true
+    }
+  },
+
+  "quality_thresholds": {
+    "min_score_to_include": 3,
+    "target_items": 50,
+    "early_stop_threshold": 55
+  }
+}

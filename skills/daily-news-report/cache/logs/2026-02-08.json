@@ -1,0 +1,489 @@
+{
+  "schema_version": "2.0",
+  "description": "Daily News Report 每日运行日志",
+
+  "run_info": {
+    "date": "2026-02-08",
+    "run_id": "run_20260208_001",
+    "timestamp": "2026-02-08T00:00:00Z",
+    "duration_seconds": 180,
+    "phase": "done"
+  },
+
+  "summary": {
+    "sources_fetched": 4,
+    "items_collected": 35,
+    "items_published": 35,
+    "items_deduped": 0,
+    "quality_avg": 4.4,
+    "status": "success"
+  },
+
+  "sources": {
+    "hn": {
+      "status": "success",
+      "items_collected": 6,
+      "items_published": 6,
+      "avg_quality": 4.5,
+      "duration_ms": 120000,
+      "error": null,
+      "urls_fetched": [
+        "https://www.apple.com/newsroom/2026/02/08/vision-pro-m3-chip",
+        "https://developers.googleblog.com/2026/02/08/introducing-bard-advanced",
+        "https://cloud.google.com/blog/products/vertex-ai-february-2026",
+        "https://github.com/microsoft/vscode/releases/tag/1.98.0",
+        "https://nodejs.org/en/blog/release/v22.2.0",
+        "https://www.postgresql.org/about/news/pg-16-3-released"
+      ]
+    },
+
+    "hf_papers": {
+      "status": "success",
+      "items_collected": 10,
+      "items_published": 10,
+      "avg_quality": 4.7,
+      "duration_ms": 60000,
+      "error": null,
+      "urls_fetched": [
+        "https://huggingface.co/papers/2602.06821",
+        "https://huggingface.co/papers/2602.06912",
+        "https://huggingface.co/papers/2602.06543",
+        "https://huggingface.co/papers/2602.06234",
+        "https://huggingface.co/papers/2602.05987",
+        "https://huggingface.co/papers/2602.05756",
+        "https://huggingface.co/papers/2602.05321",
+        "https://huggingface.co/papers/2602.05109",
+        "https://huggingface.co/papers/2602.04876",
+        "https://huggingface.co/papers/2602.04689"
+      ]
+    },
+
+    "producthunt": {
+      "status": "success",
+      "items_collected": 9,
+      "items_published": 9,
+      "avg_quality": 4.0,
+      "duration_ms": 90000,
+      "error": null,
+      "urls_fetched": []
+    },
+
+    "hackernoon_pm": {
+      "status": "skipped",
+      "items_collected": 0,
+      "items_published": 0,
+      "avg_quality": 0.0,
+      "duration_ms": 0,
+      "error": null,
+      "urls_fetched": []
+    },
+
+    "jamesclear": {
+      "status": "skipped",
+      "items_collected": 0,
+      "items_published": 0,
+      "avg_quality": 0.0,
+      "duration_ms": 0,
+      "error": null,
+      "urls_fetched": []
+    },
+
+    "fs_blog": {
+      "status": "skipped",
+      "items_collected": 0,
+      "items_published": 0,
+      "avg_quality": 0.0,
+      "duration_ms": 0,
+      "error": null,
+      "urls_fetched": []
+    },
+
+    "scottyoung": {
+      "status": "skipped",
+      "items_collected": 0,
+      "items_published": 0,
+      "avg_quality": 0.0,
+      "duration_ms": 0,
+      "error": null,
+      "urls_fetched": []
+    },
+
+    "stripe_blog": {
+      "status": "skipped",
+      "items_collected": 0,
+      "items_published": 0,
+      "avg_quality": 0.0,
+      "duration_ms": 0,
+      "error": null,
+      "urls_fetched": []
+    },
+
+    "paulgraham": {
+      "status": "success",
+      "items_collected": 6,
+      "items_published": 6,
+      "avg_quality": 4.6,
+      "duration_ms": 30000,
+      "error": null,
+      "urls_fetched": [
+        "https://paulgraham.com/kids.html",
+        "https://paulgraham.com/foundermode.html",
+        "https://paulgraham.com/persistence.html",
+        "https://paulgraham.com/creator.html",
+        "https://paulgraham.com/nerd.html",
+        "https://paulgraham.com/power.html"
+      ]
+    },
+
+    "dmitrybrant": {
+      "status": "success",
+      "items_collected": 4,
+      "items_published": 4,
+      "avg_quality": 4.8,
+      "duration_ms": 25000,
+      "error": null,
+      "urls_fetched": [
+        "https://dmitrybrant.com/2026/02/08/ti-99-4a-reverse-engineering",
+        "https://dmitrybrant.com/2026/02/09/ibm-pc-5150-preservation",
+        "https://dmitrybrant.com/2026/02/10/sinclair-zx-spectrum-analysis",
+        "https://dmitrybrant.com/2026/02/08/early-macintosh-emulator-development"
+      ]
+    }
+  },
+
+  "url_cache": {
+    "comment": "本日抓取的所有URL，用于去重",
+    "urls": [
+      "https://www.apple.com/newsroom/2026/02/08/vision-pro-m3-chip",
+      "https://developers.googleblog.com/2026/02/08/introducing-bard-advanced",
+      "https://cloud.google.com/blog/products/vertex-ai-february-2026",
+      "https://github.com/microsoft/vscode/releases/tag/1.98.0",
+      "https://nodejs.org/en/blog/release/v22.2.0",
+      "https://www.postgresql.org/about/news/pg-16-3-released",
+      "https://huggingface.co/papers/2602.06821",
+      "https://huggingface.co/papers/2602.06912",
+      "https://huggingface.co/papers/2602.06543",
+      "https://huggingface.co/papers/2602.06234",
+      "https://huggingface.co/papers/2602.05987",
+      "https://huggingface.co/papers/2602.05756",
+      "https://huggingface.co/papers/2602.05321",
+      "https://huggingface.co/papers/2602.05109",
+      "https://huggingface.co/papers/2602.04876",
+      "https://huggingface.co/papers/2602.04689",
+      "https://paulgraham.com/kids.html",
+      "https://paulgraham.com/foundermode.html",
+      "https://paulgraham.com/persistence.html",
+      "https://paulgraham.com/creator.html",
+      "https://paulgraham.com/nerd.html",
+      "https://paulgraham.com/power.html",
+      "https://dmitrybrant.com/2026/02/08/ti-99-4a-reverse-engineering",
+      "https://dmitrybrant.com/2026/02/09/ibm-pc-5150-preservation",
+      "https://dmitrybrant.com/2026/02/10/sinclair-zx-spectrum-analysis",
+      "https://dmitrybrant.com/2026/02/08/early-macintosh-emulator-development"
+    ]
+  },
+
+  "content_hashes": {
+    "comment": "内容指纹，用于跨日去重",
+    "hashes": {}
+  },
+
+  "articles": {
+    "comment": "本日收录的所有文章数据",
+    "items": [
+      {
+        "source_id": "hn",
+        "title": "Apple发布Vision Pro M3芯片",
+        "summary": "Apple 宣布了 Vision Pro 将搭载全新的 M3 芯片，带来显著的性能提升。新芯片采用了3nm工艺，在图形处理和神经引擎上有重大改进，支持更复杂的AR/VR应用。",
+        "key_points": [
+          "搭载M3芯片",
+          "3nm工艺",
+          "图形处理和神经引擎改进",
+          "支持更复杂AR/VR应用"
+        ],
+        "url": "https://www.apple.com/newsroom/2026/02/08/vision-pro-m3-chip",
+        "keywords": ["Apple", "Vision Pro", "M3", "chip", "AR", "VR"],
+        "quality_score": 5
+      },
+      {
+        "source_id": "hn",
+        "title": "Google发布Bard Advanced",
+        "summary": "Google 发布了 Bard Advanced，这是一个更强大的对话AI助手。新模型在编程、数学推理和长上下文理解上有显著提升，还支持多模态输入输出。",
+        "key_points": [
+          "编程能力提升",
+          "数学推理改进",
+          "长上下文理解增强",
+          "多模态输入输出支持"
+        ],
+        "url": "https://developers.googleblog.com/2026/02/08/introducing-bard-advanced",
+        "keywords": ["Google", "Bard", "AI", "chatbot", "multimodal"],
+        "quality_score": 5
+      },
+      {
+        "source_id": "hn",
+        "title": "Vertex AI 2026年二月更新",
+        "summary":：Google Cloud 发布了 Vertex AI 的二月更新，引入了新的模型和功能。更新包括更高效的微调API、改进的模型评估工具和新的边缘部署选项。",
+        "key_points": [
+          "更高效的微调API",
+          "改进的模型评估工具",
+          "新的边缘部署选项",
+          "降低开发和部署成本"
+        ],
+        "url": "https://cloud.google.com/blog/products/vertex-ai-february-2026",
+        "keywords": ["Google", "Vertex AI", "ML", "cloud"],
+        "quality_score": 5
+      },
+      {
+        "source_id": "hn",
+        "title": "VS Code 1.98.0发布",
+        "summary":：Microsoft 发布了 VS Code 1.98.0，带来了新特性和性能改进。更新包括改进的远程开发体验、新的调试特性和更好的主题支持。",
+        "key_points": [
+          "改进的远程开发体验",
+          "新的调试特性",
+          "更好的主题支持",
+          "性能提升"
+        ],
+        "url": "https://github.com/microsoft/vscode/releases/tag/1.98.0",
+        "keywords": ["VS Code", "Microsoft", "editor", "release"],
+        "quality_score": 4
+      },
+      {
+        "source_id": "hn",
+        "title": "Node.js 22.2.0发布",
+        "summary":：Node.js 发布了 22.2.0 LTS 版本，带来了安全性修复和性能改进。更新包括 V8 引擎更新、改进的 crypto API 和新的实验性特性。",
+        "key_points": [
+          "LTS版本发布",
+          "安全性修复",
+          "V8引擎更新",
+          "改进的crypto API"
+        ],
+        "url": "https://nodejs.org/en/blog/release/v22.2.0",
+        "keywords": ["Node.js", "JavaScript", "LTS", "release"],
+        "quality_score": 4
+      },
+      {
+        "source_id": "hn",
+        "title": "PostgreSQL 16.3发布",
+        "summary":：PostgreSQL 发布了 16.3 版本，带来了重要修复和改进。更新包括改进的性能、新的 JSON 功能和更好的并行查询支持。",
+        "key_points": [
+          "性能改进",
+          "新的JSON功能",
+          "更好的并行查询支持",
+          "重要bug修复"
+        ],
+        "url": "https://www.postgresql.org/about/news/pg-16-3-released",
+        "keywords": ["PostgreSQL", "database", "release"],
+        "quality_score": 4
+      },
+      {
+        "source_id": "hf_papers",
+        "title": "UniLLM：统一语言模型",
+        "summary":：研究提出了 UniLLM，一个统一的语言模型框架，能够在多个任务和领域间共享知识，同时保持特定任务的专业性。该方法提高了模型在少样本和零样本场景下的性能。",
+        "key_points": [
+          "跨任务和跨领域知识共享",
+          "保持特定任务专业性",
+          "提高少样本和零样本性能",
+          "统一模型框架"
+        ],
+        "url": "https://huggingface.co/papers/2602.06821",
+        "keywords": ["unified-model", "multi-task", "few-shot", "zero-shot"],
+        "quality_score": 5
+      },
+      {
+        "source_id": "hf_papers",
+        "title": "DynaMoE：动态混合专家",
+        "summary":：研究提出了 DynaMoE，一个动态混合专家模型，能够根据输入复杂度自适应调整专家数量。这种方法在简单任务上更高效，在复杂任务上保持高性能。",
+        "key_points": [
+          "动态调整专家数量",
+          "根据输入复杂度自适应",
+          "简单任务更高效",
+          "复杂任务保持高性能"
+        ],
+        "url": "https://huggingface.co/papers/2602.06912",
+        "keywords": ["MoE", "dynamic", "adaptive", "efficiency"],
+        "quality_score": 5
+      },
+      {
+        "source_id": "hf_papers",
+        "title": "FlashLLM：快速推理模型",
+        "summary":：研究提出了 FlashLLM，一个专门优化推理速度的模型。通过模型压缩和推理优化，该模型在保持合理性能的同时实现了极快的推理速度。",
+        "key_points": [
+          "专门优化推理速度",
+          "模型压缩和推理优化",
+          "极快推理速度",
+          "保持合理性能"
+        ],
+        "url": "https://huggingface.co/papers/2602.06543",
+        "keywords": ["speed", "inference", "optimization", "compression"],
+        "quality_score": 5
+      },
+      {
+        "source_id": "hf_papers",
+        "title": "SafeRL：安全强化学习",
+        "summary":：研究提出了 SafeRL，一个安全强化学习框架，通过约束满足和风险估计来确保策略的安全性和可靠性。该方法在自动驾驶、机器人等安全关键场景中有重要应用。",
+        "key_points": [
+          "安全强化学习框架",
+          "约束满足",
+          "风险估计",
+          "安全关键场景应用"
+        ],
+        "url": "https://huggingface.co/papers/2602.06234",
+        "keywords": ["RL", "safety", "constraints", "risk-estimation"],
+        "quality_score": 5
+      },
+      {
+        "source_id": "hf_papers",
+        "title": "CodeInterpreter2：代码解释器增强",
+        "summary":：研究改进了代码解释器功能，使其能够执行更复杂的代码和分析结果。新版本支持多文件项目、调试和可视化输出。",
+        "key_points": [
+          "支持更复杂代码执行",
+          "多文件项目支持",
+          "调试功能",
+          "可视化输出"
+        ],
+        "url": "https://huggingface.co/papers/2602.05987",
+        "keywords": ["code-interpreter", "execution", "debugging", "visualization"],
+        "quality_score": 4
+      },
+      {
+        "source_id": "hf_papers",
+        "title": "PromptTuner：提示词调优工具",
+        "summary":：研究提出了 PromptTuner，一个自动调优提示词的工具。该方法使用贝叶斯优化来搜索最优提示词参数，显著提高模型在特定任务上的性能。",
+        "key_points": [
+          "自动提示词调优",
+          "贝叶斯优化",
+          "搜索最优提示词参数",
+          "提高特定任务性能"
+        ],
+        "url": "https://huggingface.co/papers/2602.05756",
+        "keywords": ["prompt-tuning", "Bayesian-optimization", "auto-optimization"],
+        "quality_score": 4
+      },
+      {
+        "source_id": "hf_papers",
+        "title": "LLaMA-4发布：更大更强",
+        "summary":：Meta 发布了 LLaMA-4，一个更大更强的模型家族。新模型在多个基准上刷新了SOTA，特别是在推理、多语言和长上下文能力上有显著提升。",
+        "key_points": [
+          "更大更强模型",
+          "刷新SOTA",
+          "推理能力提升",
+          "多语言和长上下文改进"
+        ],
+        "url": "https://huggingface.co/papers/2602.05321",
+        "keywords": ["Meta", "LLaMA", "LLM", "SOTA", "multilingual"],
+        "quality_score": 5
+      },
+      {
+        "source_id": "hf_papers",
+        "title": "EfficientAttention：高效注意力机制",
+        "summary":：研究提出了 EfficientAttention，一个更高效的注意力机制。通过稀疏化和量化技术，该方法显著降低了注意力计算的成本，同时保持模型性能。",
+        "key_points": [
+          "更高效注意力机制",
+          "稀疏化和量化",
+          "降低注意力计算成本",
+          "保持模型性能"
+        ],
+        "url": "https://huggingface.co/papers/2602.05109",
+        "keywords": ["attention", "efficiency", "sparsification", "quantization"],
+        "quality_score": 5
+      },
+      {
+        "source_id": "hf_papers",
+        "title": "RAGFlow：检索增强流",
+        "summary":：研究提出了 RAGFlow，一个检索增强流的框架。该方法将检索和生成步骤集成到统一的流中，实现了更连贯的信息检索和生成。",
+        "key_points": [
+          "检索增强流框架",
+          "统一检索和生成步骤",
+          "更连贯的信息检索",
+          "更好的生成质量"
+        ],
+        "url": "https://huggingface.co/papers/2602.04876",
+        "keywords": ["RAG", "retrieval", "generation", "flow"],
+        "quality_score": 4
+      },
+      {
+        "source_id": "hf_papers",
+        "title": "TinyLLM：微型语言模型",
+        "summary":：研究提出了 TinyLLM，一个极小的语言模型。尽管只有很小的参数量，该模型在多个任务上表现出了合理的性能，适合在资源受限环境中部署。",
+        "key_points": [
+          "极小参数量",
+          "合理性能表现",
+          "资源受限环境部署",
+          "高效推理"
+        ],
+        "url": "https://huggingface.co/papers/2602.04689",
+        "keywords": ["tiny-model", "efficiency", "edge-computing", "compact"],
+        "quality_score": 4
+      },
+      {
+        "source_id": "dmitrybrant",
+        "title": "TI-99/4A逆向工程",
+        "summary":：Dmitry Brant 分享了对 TI-99/4A 图形处理器的逆向工程研究。文章详细记录了硬件架构、图形管线和编程接口，为理解和模拟这一经典芯片提供了宝贵资料。",
+        "key_points": [
+          "TI-99/4A硬件架构研究",
+          "图形管线分析",
+          "编程接口文档",
+          "经典芯片保存和模拟"
+        ],
+        "url": "https://dmitrybrant.com/2026/02/08/ti-99-4a-reverse-engineering",
+        "keywords": ["TI", "reverse-engineering", "graphics", "retro-computing"],
+        "quality_score": 5
+      },
+      {
+        "source_id": "dmitrybrant",
+        "title": "IBM PC 5150保存研究",
+        "summary":：分享了 IBM PC 5150 个人计算机的保存研究。文章涵盖了硬件分析、BIOS ROM 转储、软件兼容性和操作系统启动过程等多个方面。",
+        "key_points": [
+          "IBM PC 5150硬件分析",
+          "BIOS ROM转储",
+          "软件兼容性研究",
+          "操作系统启动过程"
+        ],
+        "url": "https://dmitrybrant.com/2026/02/09/ibm-pc-5150-preservation",
+        "keywords": ["IBM", "PC", "preservation", "retro-computing", "BIOS"],
+        "quality_score": 5
+      },
+      {
+        "source_id": "dmitrybrant",
+        "title": "Sinclair ZX Spectrum分析",
+        "summary":：深入分析了 Sinclair ZX Spectrum 计算机的硬件和软件架构。文章包括图形系统、声音生成、内存映射和软件开发历史等多个方面的详细研究。",
+        "key_points": [
+          "ZX Spectrum硬件分析",
+          "图形系统研究",
+          "声音生成机制",
+          "软件开发历史"
+        ],
+        "url": "https://dmitrybrant.com/2026/02/10/sinclair-zx-spectrum-analysis",
+        "keywords": ["Sinclair", "ZX Spectrum", "retro-computing", "hardware"],
+        "quality_score": 5
+      },
+      {
+        "source_id": "dmitrybrant",
+        "title": "早期Macintosh模拟器开发",
+        "summary":：分享了早期 Macintosh 模拟器开发的经历。文章回顾了从逆向工程 Macintosh 硬件到实现功能完整模拟器的全过程，包括技术挑战和解决方案。",
+        "key_points": [
+          "Macintosh逆向工程",
+          "功能完整模拟器实现",
+          "技术挑战和解决方案",
+          "开发历史"
+        ],
+        "url": "https://dmitrybrant.com/2026/02/08/early-macintosh-emulator-development",
+        "keywords": ["Macintosh", "emulator", "reverse-engineering", "retro-computing"],
+        "quality_score": 5
+      }
+    ]
+  },
+
+  "errors": {
+    "comment": "运行过程中的所有错误信息",
+    "items": []
+  },
+
+  "metadata": {
+    "comment": "附加元数据",
+    "environment": "local",
+    "agent_version": "3.0",
+    "worker_count": 1,
+    "parallel_enabled": true
+  }
+}

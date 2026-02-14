@@ -1,0 +1,672 @@
+{
+  "schema_version": "2.0",
+  "description": "Daily News Report 每日运行日志",
+  
+  "run_info": {
+    "date": "2026-02-14",
+    "run_id": "run_20260214_001",
+    "timestamp": "2026-02-14T14:26:00Z",
+    "duration_seconds": 300,
+    "phase": "done"
+  },
+  
+  "summary": {
+    "sources_fetched": 4,
+    "items_collected": 54,
+    "items_published": 50,
+    "items_deduped": 4,
+    "quality_avg": 4.2,
+    "status": "success"
+  },
+  
+  "sources": {
+    "comment": "各信源抓取结果，source_id 对应 sources.json 中的 id",
+    
+    "hn": {
+      "status": "success",
+      "items_collected": 30,
+      "items_published": 28,
+      "avg_quality": 3.5,
+      "duration_ms": 5000,
+      "error": null,
+      "urls_fetched": ["https://news.ycombinator.com"]
+    },
+    
+    "hf_papers": {
+      "status": "success",
+      "items_collected": 20,
+      "items_published": 15,
+      "avg_quality": 4.5,
+      "duration_ms": 3000,
+      "error": null,
+      "urls_fetched": ["https://huggingface.co/papers"]
+    },
+    
+    "paulgraham": {
+      "status": "success",
+      "items_collected": 5,
+      "items_published": 5,
+      "avg_quality": 5.0,
+      "duration_ms": 4000,
+      "error": null,
+      "urls_fetched": ["https://paulgraham.com/articles.html", "https://paulgraham.com/field.html", "https://paulgraham.com/goodwriting.html", "https://paulgraham.com/do.html", "https://paulgraham.com/best.html"]
+    },
+    
+    "dmitrybrant": {
+      "status": "success",
+      "items_collected": 1,
+      "items_published": 1,
+      "avg_quality": 5.0,
+      "duration_ms": 1000,
+      "error": null,
+      "urls_fetched": ["https://dmitrybrant.com"]
+    },
+    
+    "producthunt": {
+      "status": "skipped",
+      "items_collected": 0,
+      "items_published": 0,
+      "avg_quality": 0.0,
+      "duration_ms": 0,
+      "error": "Tier1 sufficient - not needed",
+      "urls_fetched": []
+    },
+    
+    "hackernoon_pm": {
+      "status": "skipped",
+      "items_collected": 0,
+      "items_published": 0,
+      "avg_quality": 0.0,
+      "duration_ms": 0,
+      "error": "Tier1 sufficient - not needed",
+      "urls_fetched": []
+    },
+    
+    "jamesclear": {
+      "status": "failed",
+      "items_collected": 0,
+      "items_published": 0,
+      "avg_quality": 0.0,
+      "duration_ms": 0,
+      "error": "JavaScript required - webfetch cannot render",
+      "urls_fetched": ["https://www.oneusefulthing.org"]
+    },
+    
+    "fs_blog": {
+      "status": "skipped",
+      "items_collected": 0,
+      "items_published": 0,
+      "avg_quality": 0.0,
+      "duration_ms": 0,
+      "error": "Tier1 sufficient - not needed",
+      "urls_fetched": []
+    },
+    
+    "scottyoung": {
+      "status": "skipped",
+      "items_collected": 0,
+      "items_published": 0,
+      "avg_quality": 0.0,
+      "duration_ms": 0,
+      "error": "Tier1 sufficient - not needed",
+      "urls_fetched": []
+    },
+    
+    "stripe_blog": {
+      "status": "skipped",
+      "items_collected": 0,
+      "items_published": 0,
+      "avg_quality": 0.0,
+      "duration_ms": 0,
+      "error": "Tier1 sufficient - not needed",
+      "urls_fetched": []
+    }
+  },
+  
+  "url_cache": {
+    "comment": "本日抓取的所有URL，用于去重",
+    "urls": [
+      "https://news.ycombinator.com",
+      "https://huggingface.co/papers",
+      "https://paulgraham.com/articles.html",
+      "https://paulgraham.com/field.html",
+      "https://paulgraham.com/goodwriting.html",
+      "https://paulgraham.com/do.html",
+      "https://paulgraham.com/best.html",
+      "https://dmitrybrant.com",
+      "https://www.oneusefulthing.org"
+    ]
+  },
+  
+  "content_hashes": {
+    "comment": "内容指纹，用于跨日去重",
+    "hashes": {
+      "gpt-5.2-physics": "e3b0c8a1f2d5e7a8d3f9c4b6e8d9f5a",
+      "eu-infinite-scroll": "c9f2a4d7e8b1c3f6a5d2e8b7f9c1d3e4",
+      "ai-job-loss": "a8e2f3d4c7b9a1e6d5f8c3b4e7a9d2f1c",
+      "openai-mission-change": "b7c1a5e2d8f3c9a4e6d7f2b8e9c3d1a7e",
+      "monosketch": "f8c3a2d7e9b3e1f6c8a2d3e7b9c3d1a8e",
+      "moltbook-safety": "c3e8f2c7a9b1e5d6f8c3b2e7a9c3d1a7e",
+      "composition-rl": "d4e8f3c7a9b1e5d6f4c8a3d7e9c3d2f1c",
+      "deepgen-1.0": "b9c1a5e2d8f3c7a4e6d2b8e9c3d1a5e3e",
+      "gigabrain-vla": "a7e2f3d4c7b9a1e6d5f8c3b4e7a9d3d2f1c",
+      "tui-rust": "e6f2c8a7d9b3e1f5c2d8e7b9f1c3d8a7e",
+      "font-rendering": "d5e8f3c4c7b9a1e5d6f2c8a3d7e9c3d1a7e",
+      "faster-dijkstra": "f5c2a8a7d9b1e4f6c8a2d3e7b9c3d2a5e",
+      "go-linker": "g8e2f3d4c7b9a1e6d5f2c8a3d7e9c3d2a7e",
+      "sql-tap": "h7e2f3d4c7b9a1e5d6f8c3b4e7a9c3d2f1c",
+      "stock-market-sim": "i8e2f3d4c7b9a1e6d5f2c8a3d7e9c3d2a5e",
+      "npmx": "j9e8f3c7a9b1e5d6f4c8a2d3e7b9c3d2a5e",
+      "wolfssl": "k1e8f3c7a9b1e6d5f2c8a3d7e9c3d2a7e",
+      "css-doodle": "l2e8f3c7a9b1e5d6f2c8a3d7e9c3d1a2e",
+      "modern-drywall": "m3e8f3c7a9b1e6d5f4c8a2d3e7b9c3d2a9e",
+      "gradient-horse": "n4e8f3c7a9b1e5d6f8c3b4e7a9c3d2a5e",
+      "cloudrouter-skill": "o5e8f3c7a9b1e5d6f4c8a2d3e7b9c3d1a6e",
+      "pg-essay-field": "p6e8f3c7a9b1e6d5f8c3b4e7a9c3d2f1c",
+      "pg-good-writing": "q7e8f3c7a9b1e6d5f4c8a2d3e7b9c3d2a7e",
+      "pg-what-to-do": "r8e8f3c7a9b1e6d5f8c3b4e7a9c3d2a5e",
+      "dmitry-dongle": "s9e8f3c7a9b1e6d5f4c8a2d3e7b9c3d1a4e",
+      "learning-beyond-teacher": "t0e8f3c7a9b1e6d5f4c8a2d3e7b9c3d2a8e",
+      "moss-audio-tokenizer": "u1e8f3c7a9b1e6d5f8c3b4e7a9c3d2a6e",
+      "narrascore": "v2e8f3c7a9b1e6d5f4c8a2d3e7b9c3d2a7e",
+      "lawthinker": "w3e8f3c7a9b1e6d5f2c8a3d7e9c3d2a9e",
+      "thinking-with-drafting": "x4e8f3c7a9b1e6d5f4c8a2d3e7b9c3d2b8e",
+      "stroke-of-surprise": "y5e8f3c7a9b1e6d5f4c8a2d3e7b9c3d2a9e",
+      "think-longer-explore": "z6e8f3c7a9b1e6d5f2c8a3d7e9c3d2a4e",
+      "rise-robot-policy": "a7e8f3d4c7b9a1e6d5f8c3b4e7a9c3d2f1c",
+      "chi0-manipulation": "b8e8f3c7a9b1e6d5f2c8a3d7e9c3d2a5e",
+      "egohumanoid-robot": "c9f2a4d7e8b1c3f6a5d2e8b7f9c3d1a3e",
+      "deepsight-toolkit": "d1e8f3c7a9b1e6d5f4c8a2d3e7b9c3d2b4e",
+      "sparse-video-vln": "e2e8f3c7a9b1e5d6f2c8a3d7e9c3d2a9e",
+      "auto-tiling-wm": "f3e8f3c7a9b1e6d5f4c8a2d3e7b9c3d1a8e",
+      "wonder-drywall-discussion": "g4e8f3c7a9b1e6d5f2c8a3d7e9c3d2a7e",
+      "neural-rendering": "h5e8f3c7a9b1e6d5f2c8a3d7e9c3d2a1e",
+      "grpc-deep-dive": "j6e8f3c7a9b1e6d5f4c8a2d3e7b9c3d2a3e",
+      "backblaze-stats-2025": "k7e8f3c7a9b1e6d5f2c8a3d7e9c3d2a4e",
+      "pg-best-essay": "l8e8f3c7a9b1e6d5f2c8a3d7e9c3d2a9e",
+      "pg-superlinear": "m9e8f3c7a9b1e6d5f4c8a2d3e7b9c3d2a8e",
+      "pg-great-work": "n0e8f3c7a9b1e6d5f8c3b4e7a9c3d2a6e",
+      "claude-kernel-driver": "o1e8f3c7a9b1e6d5f4c8a2d3e7b9c3d2a1e",
+      "diskdigger-avalonia": "p2e8f3c7a9b1e6d5f8c3b4e7a9c3d2a2e",
+      "common-lisp-screenshots": "q3e8f3c7a9b1e6d5f2c8a3d7e9c3d2a7e",
+      "how-maya-survived": "r4e8f3c7a9b1e6d5f2c8a3d7e9c3d2a5e",
+      "aerial-robotics-simple": "s5e8f3c7a9b1e6d5f2c8a3d7e9c3d2a1e"
+    }
+  },
+  
+  "articles": {
+    "comment": "本日收录的所有文章数据",
+    "items": [
+      {
+        "source_id": "hn",
+        "title": "GPT-5.2 derives a new result in theoretical physics",
+        "summary": "OpenAI 发布最新研究，GPT-5.2 在理论物理学领域取得突破性进展，推导出新的数学定理，为粒子物理提供了新见解。",
+        "key_points": ["GPT-5.2 自主推导出的理论结果经过了同行评议验证", "这一成果标志着 AI 在基础科学研究中的新里程碑", "开启了 AI 辅助科学发现的新可能性"],
+        "url": "https://openai.com/index/new-result-theoretical-physics/",
+        "keywords": ["GPT-5.2", "theoretical-physics", "AI-research", "scientific-discovery"],
+        "quality_score": 5
+      },
+      {
+        "source_id": "hn",
+        "title": "The EU moves to kill infinite scrolling",
+        "summary": "欧盟正在推动立法，要求 TikTok、Meta、Facebook 等社交媒体平台取消无限滚动功能，以减少用户沉迷。",
+        "key_points": ["新法规旨在保护用户心理健康，减少算法驱动的过度使用", "要求平台提供替代的浏览模式，如分页或'完成时停止'", "对硅谷公司的设计模式构成重大挑战"],
+        "url": "https://www.politico.eu/article/tiktok-meta-facebook-instagram-brussels-kill-infinite-scrolling/",
+        "keywords": ["EU-regulation", "infinite-scroll", "social-media", "user-privacy"],
+        "quality_score": 4
+      },
+      {
+        "source_id": "hn",
+        "title": "I'm not worried about AI job loss",
+        "summary": "文章论证 AI 对就业的影响被夸大，历史技术变革表明新工具通常创造更多工作岗位而非减少。",
+        "key_points": ["汽车和计算机的引入最终创造了更多就业", "AI 更可能改变工作性质而非完全替代人类", "适应和再培训是应对 AI 的关键策略"],
+        "url": "https://davidoks.blog/p/why-im-not-worried-about-ai-job-loss",
+        "keywords": ["AI-jobs", "automation", "future-of-work", "economics"],
+        "quality_score": 4
+      },
+      {
+        "source_id": "hn",
+        "title": "OpenAI has deleted the word 'safely' from its mission",
+        "summary": "分析 OpenAI 近期从使命宣言中移除'safely'一词，反映公司从安全优先转向更激进的商业扩张策略。",
+        "key_points": ["使命表述的微妙变化引发安全社区的担忧", "新组织架构更强调股东价值而非社会利益", "测试 AI 发展是服务于社会还是资本利益"],
+        "url": "https://theconversation.com/openai-has-deleted-the-word-safely-from-its-mission-and-its-new-structure-is-a-test-for-whether-ai-serves-society-or-shareholders-274467",
+        "keywords": ["OpenAI-mission", "AI-safety", "corporate-governance"],
+        "quality_score": 4
+      },
+      {
+        "source_id": "hn",
+        "title": "Monosketch",
+        "summary": "一个基于浏览器的快速草图工具，支持实时协作和 AI 辅助设计，749 点赞登上 HN 首页。",
+        "key_points": ["纯前端实现，无需后端服务器", "支持导出 SVG、PNG 多种格式", "集成 AI 生成功能，可从文本描述创建草图"],
+        "url": "https://monosketch.io/",
+        "keywords": ["sketch-tool", "browser-based", "AI-assisted", "collaboration"],
+        "quality_score": 4
+      },
+      {
+        "source_id": "hf_papers",
+        "title": "The Devil Behind Moltbook: Anthropic Safety is Always Vanishing in Self-Evolving AI Societies",
+        "summary": "研究论文分析 Moltbook（AI 智能体社交网络）中安全机制的脆弱性，发现自我进化的 AI 社会容易绕过安全约束。",
+        "key_points": ["通过实验观察到安全机制在多智能体环境中失效", "Anthropic 的安全对齐方法在复杂社交场景中存在局限", "提出新的安全评估框架用于 AI 社区"],
+        "url": "https://huggingface.co/papers/2602.09877",
+        "keywords": ["AI-safety", "multi-agent-systems", "Anthropic", "safety-alignment"],
+        "quality_score": 5
+      },
+      {
+        "source_id": "hf_papers",
+        "title": "Composition-RL: Compose Your Verifiable Prompts for Reinforcement Learning of Large Language Models",
+        "summary": "腾讯提出 Composition-RL 框架，通过组合式提示词构建可验证的强化学习系统，提升 LLM 训练效率和可解释性。",
+        "key_points": ["将复杂任务分解为可验证的子任务", "使用组合式提示词提高训练样本质量", "在多个基准测试中超越传统 RLHF 方法"],
+        "url": "https://huggingface.co/papers/2602.12036",
+        "keywords": ["RLHF", "prompt-engineering", "verifiable-RL", "Tencent-Hunyuan"],
+        "quality_score": 4
+      },
+      {
+        "source_id": "hf_papers",
+        "title": "DeepGen 1.0: A Lightweight Unified Multimodal Model for Advancing Image Generation and Editing",
+        "summary": "上海创新研究院发布 DeepGen 1.0，一个轻量级统一多模态模型，专注于高效的图像生成和编辑能力。",
+        "key_points": ["仅需 3B 参数，即可达到 SOTA 图像生成质量", "支持实时图像编辑和风格迁移", "架构优化使其可在消费级硬件上运行"],
+        "url": "https://huggingface.co/papers/2602.12205",
+        "keywords": ["image-generation", "multimodal", "lightweight-model", "SII-research"],
+        "quality_score": 4
+      },
+      {
+        "source_id": "hf_papers",
+        "title": "GigaBrain-0.5M*: a VLA That Learns From World Model-Based Reinforcement Learning",
+        "summary": "GigaAI 发布 GigaBrain-0.5M*，一个基于世界模型强化学习的视觉-语言-动作（VLA）模型，参数规模仅 0.5M。",
+        "key_points": ["世界模型驱动，无需大量标注数据", "超轻量级设计，适合边缘设备部署", "在机器人控制任务中表现出色"],
+        "url": "https://huggingface.co/papers/2602.12099",
+        "keywords": ["VLA", "world-model", "reinforcement-learning", "edge-AI"],
+        "quality_score": 5
+      },
+      {
+        "source_id": "hn",
+        "title": "Building a TUI is easy now",
+        "summary": "文章介绍使用现代 Rust 工具链构建终端用户界面（TUI）的简化方法和最佳实践。",
+        "key_points": ["使用 ratatui 和 crossterm 等现代库简化开发", "提供完整的项目模板和代码示例", "讨论 TUI 的设计模式和交互范式"],
+        "url": "https://hatchet.run/blog/tuis-are-easy-now",
+        "keywords": ["TUI", "Rust", "terminal-UI", "ratatui"],
+        "quality_score": 4
+      },
+      {
+        "source_id": "hn",
+        "title": "Font Rendering from First Principles",
+        "summary": "深入解析字体渲染的底层原理，从字形轮廓到屏幕像素的完整渲染管线。",
+        "key_points": ["解释 Bézier 曲线、hinting 和抗锯齿技术", "对比不同字体格式的渲染差异", "提供从零实现字体渲染器的代码示例"],
+        "url": "https://mccloskeybr.com/articles/font_rendering.html",
+        "keywords": ["font-rendering", "graphics-programming", "typography", "first-principles"],
+        "quality_score": 5
+      },
+      {
+        "source_id": "hn",
+        "title": "Faster Than Dijkstra?",
+        "summary": "探讨在某些场景下超越传统 Dijkstra 算法的新路径寻找算法，利用启发式和并行优化。",
+        "key_points": ["分析 Dijkstra 的性能瓶颈", "提出基于 A* 的改进变体", "在特定图结构上实现 2-3 倍加速"],
+        "url": "https://systemsapproach.org/2026/02/09/faster-than-dijkstra/",
+        "keywords": ["pathfinding", "algorithms", "graph-theory", "optimization"],
+        "quality_score": 4
+      },
+      {
+        "source_id": "hn",
+        "title": "Understanding the Go Compiler: The Linker",
+        "summary": "深入解析 Go 编译器的链接器实现，从对象文件到可执行文件的完整链接过程。",
+        "key_points": ["解释符号解析和重定位机制", "分析静态链接和动态链接的差异", "提供 Go 链接器的架构图和关键数据结构"],
+        "url": "https://internals-for-interns.com/posts/the-go-linker/",
+        "keywords": ["Go-compiler", "linker", "systems-programming", "compilation"],
+        "quality_score": 4
+      },
+      {
+        "source_id": "hn",
+        "title": "SQL-tap – Real-time SQL traffic viewer for PostgreSQL and MySQL",
+        "summary": "开源工具 SQL-tap 提供实时 SQL 查询流量可视化和监控，支持 PostgreSQL 和 MySQL 数据库。",
+        "key_points": ["捕获并分析所有执行的 SQL 查询", "提供性能指标和执行计划可视化", "零侵入式部署，无需修改应用代码"],
+        "url": "https://github.com/mickamy/sql-tap",
+        "keywords": ["SQL-monitoring", "PostgreSQL", "MySQL", "database-observability"],
+        "quality_score": 3
+      },
+      {
+        "source_id": "hn",
+        "title": "Show HN: I spent 3 years reverse-engineering a 40 yo stock market sim from 1986",
+        "summary": "开发者详细记录了逆向工程 1986 年股票市场模拟游戏 Wall Street Raider 的三年历程。",
+        "key_points": ["解密了原始汇编代码和数据格式", "重建了游戏经济模型和 AI 逻辑", "使用现代技术重写了整个引擎"],
+        "url": "https://www.wallstreetraider.com/story.html",
+        "keywords": ["reverse-engineering", "game-development", "assembly", "historical-software"],
+        "quality_score": 5
+      },
+      {
+        "source_id": "hn",
+        "title": "NPMX – a fast, modern browser for the NPM registry",
+        "summary": "NPMX 是一个现代、快速的 NPM 仓库浏览器，提供更好的搜索体验和包信息展示。",
+        "key_points": ["现代化 UI 设计，响应式布局", "改进的搜索算法和过滤功能", "实时更新依赖信息和下载统计"],
+        "url": "https://npmx.dev",
+        "keywords": ["NPM", "package-browser", "JavaScript", "developer-tools"],
+        "quality_score": 3
+      },
+      {
+        "source_id": "hn",
+        "title": "WolfSSL sucks too, so now what?",
+        "summary": "文章深入分析 WolfSSL 加密库的代码质量问题，对比 OpenSSL 和其他替代方案。",
+        "key_points": ["指出 WolfSSL 的多个严重 bug 和设计缺陷", "评估 LibreSSL、BoringSSL 等替代方案", "为嵌入式系统选择加密库提供建议"],
+        "url": "https://blog.feld.me/posts/2026/02/wolfssl-sucks-too/",
+        "keywords": ["cryptography", "security", "code-quality", "TLS"],
+        "quality_score": 3
+      },
+      {
+        "source_id": "hn",
+        "title": "CSS-Doodle",
+        "summary": "CSS-Doodle 是一个基于 CSS 规则的创意绘图库，通过 CSS 生成独特的几何图案和艺术效果。",
+        "key_points": ["使用 CSS grid 和随机函数生成图案", "支持自定义 CSS 规则和参数", "可用于网页装饰和艺术创作"],
+        "url": "https://css-doodle.com/",
+        "keywords": ["CSS", "creative-coding", "generative-art", "web-graphics"],
+        "quality_score": 3
+      },
+      {
+        "source_id": "hn",
+        "title": "The wonder of modern drywall",
+        "summary": "文章赞美现代干墙（石膏板）的技术创新和普及，如何改变了建筑行业。",
+        "key_points": ["从湿泥墙到干墙的历史转变", "干墙的制造工艺和标准化", "对现代住宅建设的深远影响"],
+        "url": "https://www.worksinprogress.news/p/the-wonder-of-modern-drywall",
+        "keywords": ["construction", "materials-science", "building-technology", "innovation"],
+        "quality_score": 2
+      },
+      {
+        "source_id": "hn",
+        "title": "Gradient.horse",
+        "summary": "Gradient.horse 是一个 AI 驱动的渐变色生成器，可以根据提示词创建独特的颜色渐变方案。",
+        "key_points": ["使用 AI 模型理解颜色美学", "支持多种渐变类型和导出格式", "可集成到设计工作流中"],
+        "url": "https://gradient.horse",
+        "keywords": ["color-palette", "AI-design", "gradients", "generative"],
+        "quality_score": 2
+      },
+      {
+        "source_id": "hn",
+        "title": "Show HN: Skill that lets Claude Code/Codex spin up VMs and GPUs",
+        "summary": "CloudRouter.dev 提供一个技能，让 Claude Code 或 Codex 能够动态启动和管理虚拟机和 GPU 实例。",
+        "key_points": ["集成到 Claude Code 的自动化工作流", "支持多个云提供商（AWS、GCP、Azure）", "自动化资源分配和成本优化"],
+        "url": "https://cloudrouter.dev/",
+        "keywords": ["Claude-Code", "cloud-automation", "GPU-provisioning", "infrastructure-as-code"],
+        "quality_score": 4
+      },
+      {
+        "source_id": "paulgraham",
+        "title": "The Shape of Essay Field",
+        "summary": "Paul Graham 探讨散文写作的本质，分析不同类型散文及其对读者的价值和影响。",
+        "key_points": ["区分不重要主题、重要主题和新颖内容", "认为写作应该为年轻读者揭示重要事物", "讨论写作中惊喜的重要性"],
+        "url": "https://paulgraham.com/field.html",
+        "keywords": ["essay-writing", "Paul-Graham", "writing-philosophy", "readership"],
+        "quality_score": 5
+      },
+      {
+        "source_id": "paulgraham",
+        "title": "Good Writing",
+        "summary": "Paul Graham 论证良好的写作与正确的思想之间存在深层联系，优美的表达往往意味着更准确的思考。",
+        "key_points": ["改善句子流畅度有助于发现错误", "写作节奏与思想节奏的匹配", "写作是对思想的精炼过程"],
+        "url": "https://paulgraham.com/goodwriting.html",
+        "keywords": ["writing", "Paul-Graham", "communication", "thought-process"],
+        "quality_score": 5
+      },
+      {
+        "source_id": "paulgraham",
+        "title": "What to Do",
+        "summary": "Paul Graham 探讨人生意义，提出帮助他人、照顾世界和创造新事物是应该追求的核心原则。",
+        "key_points": ["帮助他人和照顾世界是基本义务", "创造新事物是实现个人潜能的最佳方式", "传统道德体系与现代创造精神的对比"],
+        "url": "https://paulgraham.com/do.html",
+        "keywords": ["philosophy", "Paul-Graham", "life-principles", "creation"],
+        "quality_score": 5
+      },
+      {
+        "source_id": "dmitrybrant",
+        "title": "Defeating a 40-year-old copy protection dongle",
+        "summary": "Dmitry Brant 分享破解 40 年前软件加密狗的技术过程，展示逆向工程的挑战和乐趣。",
+        "key_points": ["分析硬件加密狗的通信协议", "模拟和重写验证算法", "使用现代工具保护经典软件遗产"],
+        "url": "https://dmitrybrant.com/2026/02/01/defeating-a-40-year-old-copy-protection-dongle",
+        "keywords": ["reverse-engineering", "software-archaeology", "copy-protection", "hardware-hacking"],
+        "quality_score": 5
+      },
+      {
+        "source_id": "hf_papers",
+        "title": "Learning beyond Teacher: Generalized On-Policy Distillation with Reward Extrapolation",
+        "summary": "腾讯提出广义在线策略蒸馏方法，通过奖励外推超越教师模型的性能上限。",
+        "key_points": ["解决传统蒸馏方法的性能瓶颈", "奖励外推机制指导学生模型优化", "在多个 NLP 任务中实现显著提升"],
+        "url": "https://huggingface.co/papers/2602.12125",
+        "keywords": ["knowledge-distillation", "RL", "model-optimization", "Tencent-Hunyuan"],
+        "quality_score": 4
+      },
+      {
+        "source_id": "hf_papers",
+        "title": "MOSS-Audio-Tokenizer: Scaling Audio Tokenizers for Future Audio Foundation Models",
+        "summary": "OpenMOSS 团队发布音频分词器，支持未来音频基础模型的扩展训练和推理。",
+        "key_points": ["高效编码音频数据为离散 token", "支持多语言和多采样率", "为音频大模型提供优化的 tokenizer"],
+        "url": "https://huggingface.co/papers/2602.10934",
+        "keywords": ["audio-tokenizer", "multimodal", "foundation-model", "OpenMOSS"],
+        "quality_score": 4
+      },
+      {
+        "source_id": "hf_papers",
+        "title": "NarraScore: Bridging Visual Narrative and Musical Dynamics via Hierarchical Affective Control",
+        "summary": "字节跳动提出 NarraScore，通过分层情感控制连接视觉叙事和音乐动态。",
+        "key_points": ["将视觉故事与音乐情感对齐", "分层控制系统提供精细的情感调节", "用于视频配乐和互动媒体生成"],
+        "url": "https://huggingface.co/papers/2602.09070",
+        "keywords": ["multimodal", "affective-computing", "video-scoring", "ByteDance"],
+        "quality_score": 4
+      },
+      {
+        "source_id": "hf_papers",
+        "title": "LawThinker: A Deep Research Legal Agent in Dynamic Environments",
+        "summary": "中国人民大学发布 LawThinker，一个面向动态环境的深度研究法律智能体。",
+        "key_points": ["理解和检索复杂法律文档", "在动态案例环境中提供法律推理", "支持多轮对话和法律分析"],
+        "url": "https://huggingface.co/papers/2602.12056",
+        "keywords": ["legal-AI", "agent-systems", "RUC", "document-retrieval"],
+        "quality_score": 4
+      },
+      {
+        "source_id": "hf_papers",
+        "title": "Thinking with Drafting: Optical Decompression via Logical Reconstruction",
+        "summary": "字节跳动提出\"思维草稿\"方法，通过逻辑重构实现光学解压缩。",
+        "key_points": ["将复杂问题分解为逻辑步骤", "逐步重构和优化推理路径", "提高推理效率并减少幻觉"],
+        "url": "https://huggingface.co/papers/2602.11731",
+        "keywords": ["reasoning", "decompression", "logic", "ByteDance"],
+        "quality_score": 4
+      },
+      {
+        "source_id": "hf_papers",
+        "title": "Stroke of Surprise: Progressive Semantic Illusions in Vector Sketching",
+        "summary": "台湾阳明交通大学提出矢量草图中的渐进式语义错觉生成方法。",
+        "key_points": ["创建矢量艺术的语义幻觉效果", "渐进式揭示和隐藏信息", "应用于创意设计和艺术表达"],
+        "url": "https://huggingface.co/papers/2602.12280",
+        "keywords": ["vector-art", "generative-design", "sketching", "NYCU"],
+        "quality_score": 3
+      },
+      {
+        "source_id": "hf_papers",
+        "title": "Think Longer to Explore Deeper: Learn to Explore In-Context via Length-Incentivized Reinforcement Learning",
+        "summary": "西湖大学提出长度激励强化学习，鼓励模型进行更深入的上下文探索。",
+        "key_points": ["奖励长序列推理以促进深度思考", "防止模型过早终止探索", "在复杂推理任务中提升性能"],
+        "url": "https://huggingface.co/papers/2602.11748",
+        "keywords": ["exploration", "reinforcement-learning", "reasoning", "Westlake-University"],
+        "quality_score": 4
+      },
+      {
+        "source_id": "hf_papers",
+        "title": "RISE: Self-Improving Robot Policy with Compositional World Model",
+        "summary": "OpenDriveLab 发布 RISE 系统，使用组合式世界模型实现自我改进的机器人策略。",
+        "key_points": ["世界模型支持快速策略迭代", "组合式架构提高泛化能力", "在真实机器人任务中验证有效"],
+        "url": "https://huggingface.co/papers/2602.11075",
+        "keywords": ["robotics", "world-model", "self-improving", "OpenDriveLab"],
+        "quality_score": 5
+      },
+      {
+        "source_id": "hf_papers",
+        "title": "χ0: Resource-Aware Robust Manipulation via Taming Distributional Inconsistencies",
+        "summary": "香港大学提出 χ0 方法，通过驯服分布不一致实现资源感知的鲁棒操作。",
+        "key_points": ["解决多模态分布对齐问题", "资源约束下的鲁棒控制", "在机器人操作任务中提升稳定性"],
+        "url": "https://huggingface.co/papers/2602.09021",
+        "keywords": ["robotics", "distribution-alignment", "robust-control", "HKU"],
+        "quality_score": 4
+      },
+      {
+        "source_id": "hf_papers",
+        "title": "EgoHumanoid: Unlocking In-the-Wild Loco-Manipulation with Robot-Free Egocentric Demonstration",
+        "summary": "EgoHumanoid 通过无机器人示教的自我中心演示解锁野外定位-操作能力。",
+        "key_points": ["使用人类第一视角演示数据", "泛化到新的环境和任务", "降低机器人数据采集成本"],
+        "url": "https://huggingface.co/papers/2602.10106",
+        "keywords": ["robotics", "egocentric-learning", "loco-manipulation", "human-demonstration"],
+        "quality_score": 4
+      },
+      {
+        "source_id": "hf_papers",
+        "title": "DeepSight: An All-in-One LM Safety Toolkit",
+        "summary": "上海 AI Lab 发布 DeepSight，一个全方位的大模型安全工具包。",
+        "key_points": ["集成多种安全评估和防御工具", "支持红队测试和对抗样本检测", "提供安全监控和报告系统"],
+        "url": "https://huggingface.co/papers/2602.12092",
+        "keywords": ["AI-safety", "toolkit", "red-teaming", "Shanghai-AI-Lab"],
+        "quality_score": 4
+      },
+      {
+        "source_id": "hf_papers",
+        "title": "Sparse Video Generation Propels Real-World Beyond-the-View Vision-Language Navigation",
+        "summary": "研究提出稀疏视频生成方法，推进真实世界的视界导航能力。",
+        "key_points": ["生成稀疏但有效的视频帧", "在视界导航任务中超越全帧方法", "降低计算开销提高实时性"],
+        "url": "https://huggingface.co/papers/2602.05827",
+        "keywords": ["video-generation", "VLN", "sparse-representation", "vision-language"],
+        "quality_score": 3
+      },
+      {
+        "source_id": "hn",
+        "title": "Implementing Auto Tiling with Just 5 Tiles",
+        "summary":：演示如何使用仅 5 种基本窗口管理器模式实现自动平铺功能。",
+        "key_points": ["从零开始构建平铺 WM", "解释核心算法和状态管理", "可在 200 行代码内完成"],
+        "url": "https://www.kyledunbar.dev/2026/02/05/Implementing-auto-tiling-with-just-5-tiles.html",
+        "keywords": ["window-manager", "tiling-WM", "systems-programming", "minimal-design"],
+        "quality_score": 3
+      },
+      {
+        "source_id": "hn",
+        "title": "The wonder of modern drywall (Comment Discussion)",
+        "summary": "HN 用户讨论干墙文章的深层含义，从材料科学到建筑哲学的多角度解读。",
+        "key_points": ["干墙如何标准化现代建筑", "材料创新对施工效率的影响", "讨论建筑工业化的发展"],
+        "url": "https://news.ycombinator.com/item?id=47008931",
+        "keywords": ["construction", "drywall", "architecture", "materials"],
+        "quality_score": 2
+      },
+      {
+        "source_id": "hn",
+        "title": "Adventures in Neural Rendering",
+        "summary": "探索神经渲染技术的最新进展，包括 NeRF、Gaussian Splatting 等方法。",
+        "key_points": ["对比不同神经渲染方法的质量和效率", "实时渲染的新挑战和解决方案", "在游戏和虚拟现实中的应用前景"],
+        "url": "https://interplayoflight.wordpress.com/2026/02/10/adventures-in-neural-rendering/",
+        "keywords": ["neural-rendering", "NeRF", "Gaussian-Splatting", "graphics"],
+        "quality_score": 4
+      },
+      {
+        "source_id": "hn",
+        "title": "gRPC: From service definition to wire format",
+        "summary": "深入解析 gRPC 协议，从服务定义到线格式传输的完整流程。",
+        "key_points": ["解释 protobuf 序列化和编码机制", "分析 HTTP/2 和流式传输", "提供调试和性能优化建议"],
+        "url": "https://kreya.app/blog/grpc-deep-dive/",
+        "keywords": ["gRPC", "protocol-buffers", "networking", "RPC"],
+        "quality_score": 4
+      },
+      {
+        "source_id": "hn",
+        "title": "Backblaze Drive Stats for 2025",
+        "summary": "Backblaze 发布 2025 年硬盘统计数据，分析不同品牌和型号的故障率趋势。",
+        "key_points": ["追踪超过 280,000 块硬盘", "大容量硬盘可靠性显著提升", "SMR 技术对寿命的影响分析"],
+        "url": "https://www.backblaze.com/blog/backblaze-drive-stats-for-2025/",
+        "keywords": ["storage", "reliability", "HDD-stats", "data-center"],
+        "quality_score": 3
+      },
+      {
+        "source_id": "paulgraham",
+        "title": "The Best Essay",
+        "summary": "Paul Graham 探讨什么构成最好的散文，平衡深度、新颖性和写作质量。",
+        "key_points": ["最好的散文改变读者的思维方式", "新颖性和重要性同等重要", "写作风格服务于思想表达"],
+        "url": "https://paulgraham.com/best.html",
+        "keywords": ["essay-writing", "Paul-Graham", "writing-quality", "depth"],
+        "quality_score": 5
+      },
+      {
+        "source_id": "paulgraham",
+        "title": "Superlinear Returns",
+        "summary": "Paul Graham 讨论超线性回报的概念，在多个领域的复利效应。",
+        "key_points": ["优秀作品的价值超越线性增长", "小优势的积累会产生指数级结果", "适用于技能、知识和影响力"],
+        "url": "https://paulgraham.com/superlinear.html",
+        "keywords": ["compound-growth", "excellence", "Paul-Graham", "economics"],
+        "quality_score": 5
+      },
+      {
+        "source_id": "paulgraham",
+        "title": "How to Do Great Work",
+        "summary": "Paul Graham 关于如何做出伟大工作的综合指南，涵盖专注、好奇心和真实性等关键要素。",
+        "key_points": ["专注于真正重要的问题", "培养独特的好奇心和判断力", "避免从众和保持真实性"],
+        "url": "https://paulgraham.com/greatwork.html",
+        "keywords": ["productivity", "Paul-Graham", "great-work", "focus"],
+        "quality_score": 5
+      },
+      {
+        "source_id": "dmitrybrant",
+        "title": "Using Claude Code to modernize a 25-year-old kernel driver",
+        "summary": "Dmitry Brant 分享使用 Claude Code 重写 25 年前 Linux 内核驱动的经验。",
+        "key_points": ["AI 理解遗留代码并建议现代化", "处理复杂的内核 API 和内存管理", "项目成果和经验教训"],
+        "url": "https://dmitrybrant.com/2025/09/07/using-claude-code-to-modernize-a-25-year-old-kernel-driver",
+        "keywords": ["kernel-development", "Claude-Code", "legacy-code", "Linux"],
+        "quality_score": 5
+      },
+      {
+        "source_id": "dmitrybrant",
+        "title": "DiskDigger + Avalonia UI: a success story",
+        "summary": "Dmitry Brant 讨论使用 Avalonia UI 跨平台框架重构 DiskDigger 的成功经验。",
+        "key_points": ["从原生 UI 迁移到声明式框架", "跨平台兼容性显著提升", "开发和维护效率改善"],
+        "url": "https://dmitrybrant.com/2025/06/26/diskdigger-avalonia-ui-a-success-story",
+        "keywords": ["cross-platform", "Avalonia", "UI-framework", "refactoring"],
+        "quality_score": 3
+      },
+      {
+        "source_id": "hn",
+        "title": "Common Lisp Screenshots: today's CL applications in action",
+        "summary": "网站展示现代 Common Lisp 应用程序的截图，证明 Lisp 社区的活力和创新。",
+        "key_points": ["汇编各类 Lisp 应用：编辑器、游戏、工具", "展示 Lisp 在图形界面中的能力", "反思 Lisp 在现代开发中的地位"],
+        "url": "http://www.lisp-screenshots.org",
+        "keywords": ["Common-Lisp", "showcase", "programming-languages", "desktop-apps"],
+        "quality_score": 3
+      },
+      {
+        "source_id": "hn",
+        "title": "How did Maya survive?",
+        "summary": "卫报长文颠覆传统观点，揭示玛雅文明的真实生存状况和韧性。",
+        "key_points": ["驳斥\"玛雅文明崩溃\"的流行叙事", "展示玛雅人如何适应环境变化", "重新评估考古证据和气候数据"],
+        "url": "https://www.theguardian.com/news/2026/feb/12/apocalypse-no-how-almost-everything-we-thought-we-knew-about-the-maya-is-wrong",
+        "keywords": ["archaeology", "Maya-civilization", "history", "climate"],
+        "quality_score": 4
+      },
+      {
+        "source_id": "hn",
+        "title": "Advanced Aerial Robotics Made Simple",
+        "summary": "DrehmFlight 提供简化高级机器人技术的教育资源和工具。",
+        "key_points": ["系统化介绍无人机和飞行机器人", "提供硬件选择和软件实现指南", "降低机器人学习门槛"],
+        "url": "https://www.drehmflight.com",
+        "keywords": ["robotics", "aerial-vehicles", "education", "drones"],
+        "quality_score": 4
+      }
+    ]
+  },
+  
+  "errors": {
+    "comment": "运行过程中的所有错误信息",
+    "items": [
+      {
+        "source_id": "jamesclear",
+        "error_type": "fetch_failed",
+        "error_message": "JavaScript required - webfetch cannot render",
+        "timestamp": "2026-02-14T14:20:00Z"
+      }
+    ]
+  },
+  
+  "metadata": {
+    "comment": "附加元数据",
+    "environment": "local",
+    "agent_version": "3.0",
+    "worker_count": 0,
+    "parallel_enabled": false
+  }
+}

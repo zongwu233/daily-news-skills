@@ -3,46 +3,46 @@
   "description": "Daily News Report 缓存文件，用于避免重复抓取和跟踪历史表现",
 
   "last_run": {
-    "date": "2026-02-03",
-    "duration_seconds": 480,
-    "items_collected": 50,
+    "date": "2026-03-09",
+    "duration_seconds": 300,
+    "items_collected": 54,
     "items_published": 50,
-    "sources_used": ["hn", "hf_papers", "paulgraham", "dmitrybrant", "jamesclear", "fs_blog", "producthunt", "hackernoon_pm", "scotthyoung", "stripe_blog"]
+    "sources_used": ["hn", "hf_papers", "paulgraham", "dmitrybrant"]
   },
 
   "source_stats": {
     "_comment": "记录每个源的历史表现，用于动态调整优先级",
     "hn": {
-      "total_fetches": 2,
-      "success_count": 2,
-      "avg_items_per_fetch": 10,
-      "avg_quality_score": 4.2,
-      "last_fetch": "2026-02-03",
-      "last_success": "2026-02-03"
+      "total_fetches": 3,
+      "success_count": 3,
+      "avg_items_per_fetch": 22,
+      "avg_quality_score": 4.3,
+      "last_fetch": "2026-03-09",
+      "last_success": "2026-03-09"
     },
     "hf_papers": {
-      "total_fetches": 2,
-      "success_count": 2,
-      "avg_items_per_fetch": 3,
+      "total_fetches": 3,
+      "success_count": 3,
+      "avg_items_per_fetch": 9,
       "avg_quality_score": 4.8,
-      "last_fetch": "2026-02-03",
-      "last_success": "2026-02-03"
+      "last_fetch": "2026-03-09",
+      "last_success": "2026-03-09"
     },
     "paulgraham": {
-      "total_fetches": 2,
-      "success_count": 2,
-      "avg_items_per_fetch": 3,
+      "total_fetches": 3,
+      "success_count": 3,
+      "avg_items_per_fetch": 18,
       "avg_quality_score": 4.6,
-      "last_fetch": "2026-02-03",
-      "last_success": "2026-02-03"
+      "last_fetch": "2026-03-09",
+      "last_success": "2026-03-09"
     },
     "dmitrybrant": {
-      "total_fetches": 2,
-      "success_count": 2,
-      "avg_items_per_fetch": 1,
-      "avg_quality_score": 5.0,
-      "last_fetch": "2026-02-03",
-      "last_success": "2026-02-03"
+      "total_fetches": 3,
+      "success_count": 3,
+      "avg_items_per_fetch": 2,
+      "avg_quality_score": 4.9,
+      "last_fetch": "2026-03-09",
+      "last_success": "2026-03-09"
     },
     "jamesclear": {
       "total_fetches": 1,
@@ -215,6 +215,58 @@
 
   "article_history": {
     "_comment": "已收录文章的简要记录",
+    "2026-03-09": [
+      "Agent Safehouse – macOS-native sandboxing for local agents",
+      "BandPO: Bridging Trust Regions and Ratio Clipping via Probability-Aware Bounds for LLM Reinforcement Learning",
+      "Penguin-VL: Exploring Efficiency Limits of VLM with LLM-based Vision Encoders",
+      "Living human brain cells play DOOM on a CL1",
+      "Show HN: I built a real-time OSINT dashboard pulling 15 live global feeds",
+      "PCB devboard size of a USB-C plug",
+      "My 'grand vision' for Rust",
+      "WSL Manager",
+      "FrameBook",
+      "RoboMME: Benchmarking and Understanding Memory for Robotic Generalist Policies",
+      "We should revisit literate programming in the agent era",
+      "Blacksky AppView",
+      "Every single board computer I tested in 2025",
+      "Defeating a 40-year-old copy protection dongle",
+      "Reasoning Models Struggle to Control their Chains of Thought",
+      "π-StepNFT: Wider Space Needs Finer Steps in Online RL for Flow-based VLAs",
+      "Using Claude Code to modernize a 25-year-old kernel driver",
+      "My Homelab Setup",
+      "The death of social media is renaissance of RSS",
+      "Pushing and Pulling: Three reactivity algorithms",
+      "Show HN: Skir – like Protocol Buffer but better",
+      "Z80 Sans – a disassembler in a font",
+      "Linux Internals: How /proc/self/mem writes to unwritable memory",
+      "Artificial-life: A simple (300 lines of code) reproduction of Computational Life",
+      "Why can't you tune your guitar?",
+      "Progressive Residual Warmup for Language Model Pretraining",
+      "Dynamic Chunking Diffusion Transformer",
+      "FlashPrefill: Instantaneous Pattern Discovery and Thresholding for Ultra-Fast Long-Context Prefilling",
+      "Physical Simulator In-the-Loop Video Generation",
+      "PixARMesh: Autoregressive Mesh-Native Single-View Scene Reconstruction",
+      "Microscopes can see video on a laserdisc",
+      "I made a programming language with M&Ms",
+      "The Brand Age",
+      "The Shape of Essay Field",
+      "Good Writing",
+      "What to Do",
+      "The Origins of Wokeness",
+      "Writes and Write-Nots",
+      "When To Do What You Love",
+      "Founder Mode",
+      "The Right Kind of Stubborn",
+      "The Reddits",
+      "How to Start Google",
+      "The Best Essay",
+      "Superlinear Returns",
+      "How to Do Great Work",
+      "How to Get New Ideas",
+      "The Need to Read",
+      "What You (Want to) Want",
+      "Alien Truth"
+    ],
     "2026-02-03": [
       "xAI joins SpaceX",
       "The Codex App",

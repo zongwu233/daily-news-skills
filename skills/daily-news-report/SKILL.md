@@ -421,9 +421,15 @@ output_schema:
       title: string          # 标题
       summary: string        # 2-4句摘要
       key_points: string[]   # 最多3个要点
-      url: string            # 原文链接
+      url: string            # 新闻的具体链接（必须是新闻文章本身的 URL， NOT 网站首页）
       keywords: string[]     # 关键词
       quality_score: 1-5     # 质量评分
+
+IMPORTANT URL REQUIREMENT:
+- 对于 Hacker News: 必须提取每条新闻的完整 URL（如 https://example.com/article/123），而不是 https://news.ycombinator.com
+- 对于 HuggingFace Papers: 必须提取每篇论文的完整 URL（如 https://huggingface.co/papers/2301.xxxxx），而不是 https://huggingface.co/papers
+- 对于博客文章: 必须提取每篇文章的完整 URL（如 https://blog.example.com/post-title），而不是博客首页
+- URL 必须是指向具体新闻/文章的链接，而不是网站首页
 
 constraints:
   filter: "前沿技术/高深技术/提效技术/实用资讯"
@@ -555,6 +561,12 @@ Task 调用:
       "metadata": { "processed": 2, "failed": 0 }
     }
 
+    CRITICAL - URL 提取要求：
+    - URL 必须是每条新闻/文章的具体链接，NOT 网站首页
+    - 对于 Hacker News: 提取新闻标题的实际 URL（如 https://example.com/article），而不是 https://news.ycombinator.com
+    - 对于 HuggingFace: 提取每篇论文的完整 URL（如 https://huggingface.co/papers/2301.xxxxx），而不是 https://huggingface.co/papers
+    - 点击每条新闻标题获取实际 URL，不要使用列表页 URL
+
     筛选标准：
     - 保留：前沿技术/高深技术/提效技术/实用资讯
     - 排除：泛科普/营销软文/过度学术化/招聘帖
@@ -581,12 +593,13 @@ input:
       - title: string
       - summary: string
       - key_points: string[]
-      - url: string
+      - url: string  # 必须是每条新闻/文章的具体链接，NOT 网站首页
       - keywords: string[]
       - quality_score: 1-5
     constraints:
       filter: 前沿技术/高深技术/提效技术/实用资讯
       exclude: 泛科普/营销软文/过度学术化
+      url_requirement: 必须提取新闻文章的实际 URL，不能是网站首页（如 Hacker News 必须提取每条新闻的具体 URL，而不是 https://news.ycombinator.com）
 ```
 
 ## 输出模板

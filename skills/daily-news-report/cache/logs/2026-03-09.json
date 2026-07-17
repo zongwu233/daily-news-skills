@@ -1,0 +1,154 @@
+{
+  "schema_version": "2.0",
+  "description": "Daily News Report 每日运行日志",
+
+  "run_info": {
+    "date": "2026-03-09",
+    "run_id": "run_20260309_001",
+    "timestamp": "2026-03-09T14:09:55+08:00",
+    "duration_seconds": 300,
+    "phase": "done"
+  },
+
+  "summary": {
+    "sources_fetched": 4,
+    "items_collected": 54,
+    "items_published": 50,
+    "items_deduped": 4,
+    "quality_avg": 4.5,
+    "status": "success"
+  },
+
+  "sources": {
+    "comment": "各信源抓取结果，source_id 对应 sources.json 中的 id",
+
+    "hn": {
+      "status": "success",
+      "items_collected": 30,
+      "items_published": 22,
+      "avg_quality": 4.3,
+      "duration_ms": 15000,
+      "error": null,
+      "urls_fetched": ["https://agent-safehouse.dev/", "https://github.com/Dieu-de-l-elec/AngstromIO-devboard", "https://silly.business/blog/we-should-revisit-literate-programming-in-the-agent-era/", "https://bret.dk/every-single-board-computer-i-tested-in-2025/", "https://bryananthonio.com/blog/my-homelab-setup/", "https://jonathan-frere.com/posts/reactivity-algorithms/", "https://github.com/bostrot/wsl2-distro-manager", "https://skir.build/", "https://offlinemark.com/an-obscure-quirk-of-proc/", "https://github.com/Rabrg/artificial-life", "https://www.youtube.com/watch?v=yRV8fSw6HaE", "https://blog.yoshuawuyts.com/a-grand-vision-for-rust/", "https://fb.edoo.gg", "https://github.com/BigBodyCobain/Shadowbroker", "https://github.com/blacksky-algorithms/atproto", "https://www.ethanhein.com/wp/2019/why-cant-you-tune-your-guitar/", "https://mufeedvh.com/posts/i-made-a-programming-language-with-mnms/", "https://www.smartlab.at/rss-revival-life-after-social-media/", "https://www.youtube.com/watch?v=qZuR-772cks", "https://github.com/nevesnunes/z80-sans"]
+    },
+
+    "hf_papers": {
+      "status": "success",
+      "items_collected": 9,
+      "items_published": 9,
+      "avg_quality": 4.8,
+      "duration_ms": 12000,
+      "error": null,
+      "urls_fetched": ["https://huggingface.co/papers/2603.04918", "https://huggingface.co/papers/2603.06569", "https://huggingface.co/papers/2603.04639", "https://huggingface.co/papers/2603.05706", "https://huggingface.co/papers/2603.02083", "https://huggingface.co/papers/2603.05369", "https://huggingface.co/papers/2603.06351", "https://huggingface.co/papers/2603.06199", "https://huggingface.co/papers/2603.06408", "https://huggingface.co/papers/2603.05888"]
+    },
+
+    "producthunt": {
+      "status": "pending",
+      "items_collected": 0,
+      "items_published": 0,
+      "avg_quality": 0.0,
+      "duration_ms": 0,
+      "error": null,
+      "urls_fetched": []
+    },
+
+    "hackernoon_pm": {
+      "status": "pending",
+      "items_collected": 0,
+      "items_published": 0,
+      "avg_quality": 0.0,
+      "duration_ms": 0,
+      "error": null,
+      "urls_fetched": []
+    },
+
+    "jamesclear": {
+      "status": "pending",
+      "items_collected": 0,
+      "items_published": 0,
+      "avg_quality": 0.0,
+      "duration_ms": 0,
+      "error": null,
+      "urls_fetched": []
+    },
+
+    "fs_blog": {
+      "status": "pending",
+      "items_collected": 0,
+      "items_published": 0,
+      "avg_quality": 0.0,
+      "duration_ms": 0,
+      "error": null,
+      "urls_fetched": []
+    },
+
+    "scottyoung": {
+      "status": "pending",
+      "items_collected": 0,
+      "items_published": 0,
+      "avg_quality": 0.0,
+      "duration_ms": 0,
+      "error": null,
+      "urls_fetched": []
+    },
+
+    "stripe_blog": {
+      "status": "pending",
+      "items_collected": 0,
+      "items_published": 0,
+      "avg_quality": 0.0,
+      "duration_ms": 0,
+      "error": null,
+      "urls_fetched": []
+    },
+
+    "paulgraham": {
+      "status": "success",
+      "items_collected": 18,
+      "items_published": 18,
+      "avg_quality": 4.6,
+      "duration_ms": 8000,
+      "error": null,
+      "urls_fetched": ["https://paulgraham.com/brandage.html", "https://paulgraham.com/field.html", "https://paulgraham.com/goodwriting.html", "https://paulgraham.com/do.html", "https://paulgraham.com/woke.html", "https://paulgraham.com/writes.html", "https://paulgraham.com/when.html", "https://paulgraham.com/foundermode.html", "https://paulgraham.com/persistence.html", "https://paulgraham.com/reddits.html", "https://paulgraham.com/google.html", "https://paulgraham.com/best.html", "https://paulgraham.com/superlinear.html", "https://paulgraham.com/greatwork.html", "https://paulgraham.com/getideas.html", "https://paulgraham.com/read.html", "https://paulgraham.com/want.html", "https://paulgraham.com/alien.html"]
+    },
+
+    "dmitrybrant": {
+      "status": "success",
+      "items_collected": 2,
+      "items_published": 2,
+      "avg_quality": 4.9,
+      "duration_ms": 5000,
+      "error": null,
+      "urls_fetched": ["https://dmitrybrant.com/2026/02/01/defeating-a-40-year-old-copy-protection-dongle", "https://dmitrybrant.com/2025/09/07/using-claude-code-to-modernize-a-25-year-old-kernel-driver"]
+    }
+  },
+
+  "url_cache": {
+    "comment": "本日抓取的所有URL，用于去重",
+    "urls": []
+  },
+
+  "content_hashes": {
+    "comment": "内容指纹，用于跨日去重",
+    "hashes": {}
+  },
+
+  "articles": {
+    "comment": "本日收录的所有文章数据",
+    "items": []
+  },
+
+  "errors": {
+    "comment": "运行过程中的所有错误信息",
+    "items": []
+  },
+
+  "metadata": {
+    "comment": "附加元数据",
+    "environment": "local",
+    "agent_version": "3.0",
+    "worker_count": 0,
+    "parallel_enabled": false,
+    "execution_mode": "serial"
+  }
+}

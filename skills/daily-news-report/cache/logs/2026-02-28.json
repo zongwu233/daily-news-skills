@@ -1,0 +1,373 @@
+{
+  "schema_version": "2.0",
+  "description": "Daily News Report 每日运行日志",
+
+  "run_info": {
+    "date": "2026-02-28",
+    "run_id": "run_2026-02-28_002",
+    "timestamp": "2026-02-28T16:32:00Z",
+    "duration_seconds": 120,
+    "phase": "completed"
+  },
+
+  "summary": {
+    "sources_fetched": 3,
+    "items_collected": 30,
+    "items_published": 30,
+    "items_deduped": 0,
+    "quality_avg": 3.7,
+    "status": "success"
+  },
+
+  "sources": {
+    "comment": "各信源抓取结果，source_id 对应 sources.json 中的 id",
+
+    "websearch_ai": {
+      "status": "success",
+      "items_collected": 10,
+      "avg_quality": 4.2,
+      "duration_seconds": 30
+    },
+
+    "websearch_programming": {
+      "status": "success",
+      "items_collected": 10,
+      "avg_quality": 3.8,
+      "duration_seconds": 30
+    },
+
+    "websearch_cloud": {
+      "status": "success",
+      "items_collected": 10,
+      "avg_quality": 3.7,
+      "duration_seconds": 30
+    },
+
+    "websearch_security": {
+      "status": "success",
+      "items_collected": 4,
+      "avg_quality": 3.0,
+      "duration_seconds": 30
+    },
+
+    "websearch_tools": {
+      "status": "success",
+      "items_collected": 6,
+      "avg_quality": 3.3,
+      "duration_seconds": 30
+    }
+  },
+
+  "url_cache": {
+    "urls": [
+      "https://deepmind.com/blog/accelerating-mathematical-and-scientific-discovery-with-gemini-deep-think/",
+      "https://techcrunch.com/2026/02/27/openai-raises-110b-in-one-of-the-largest-private-funding-rounds-in-history/",
+      "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-pro",
+      "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-deep-think/",
+      "https://www.vastdata.com/press-releases/vast-data-unveils-secure-trusted-self-learning-agentic-ai",
+      "https://quantumzeitgeist.com/artificial-faster-intelligence-learns-virtual-worlds/",
+      "https://www.business-standard.com/amp/technology/tech-news/surprise-coding-breakthrough-that-made-anthropic-into-an-ai-juggernaut-126022100047_1.html",
+      "https://hkust.edu.hk/news/hkusts-ai-breakthrough-transforms-storm-forecasting-enabling-earlier-life-saving-warnings",
+      "https://www.infoworld.com/article/4108092/6-ai-breakthroughs-that-will-define-2026.html",
+      "https://dev.to/dataformathub/deep-dive-why-rust-based-tooling-is-dominating-javascript-in-2026-3dbl",
+      "https://blog.jetbrains.com/rust/2026/01/27/rust-vs-javascript-typescript/",
+      "https://www.devtoolsguide.com/oxc-javascript-toolchain",
+      "https://coderush.montsoftware.com/blog/rust-vs-go-vs-typescript-backends-performance-safety-and-developer-experience",
+      "https://docs.script-lang.org/blog/introducing-script",
+      "https://www.refactor.website/javascript/bun-nodejs-deno-javascript-runtime-war-2026",
+      "https://www.cisa.gov/news-events/alerts/2026/02/25/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+      "https://www.crowdstrike.com/en-us/blog/patch-tuesday-analysis-february-2026/",
+      "https://www.cyber.gc.ca/en/alerts-advisories/al26-004-critical-vulnerability-affecting-cisco-catalyst-sd-wan-cve-2026-20127",
+      "https://www.cyber.gc.ca/en/alerts-advisories/microsoft-security-advisory-february-2026-monthly-rollup-av26-111",
+      "https://azure.microsoft.com/en-us/blog/beyond-boundaries-the-future-of-azure-storage-in-2026/",
+      "https://cloud.google.com/blog/products/ai-machine-learning/expanding-vertex-ai-with-claude-opus-4-6",
+      "https://longbridge.com/en/news/275780603",
+      "https://github.blog/changelog/2026-02-25-github-copilot-cli-is-now-generally-available",
+      "https://claude5.ai/news/anthropic-claude-code-v2-agentic-features-launch",
+      "https://code.visualstudio.com/updates/v1_109",
+      "https://www.globenewswire.com/news-release/2026/02/26/3245668/0/en/Tabnine-Launches-Enterprise-Context-Engine-Introducing-the-Missing-Layer-for-Reliable-Enterprise-AI.html",
+      "https://www.atlassian.com/blog/announcements/rovo-dev-now-generally-available-in-vs-code"
+    ]
+  },
+
+  "content_hashes": {
+    "hashes": {}
+  },
+
+  "articles": {
+    "items": [
+      {
+        "source_id": "websearch_ai",
+        "title": "Gemini Deep Think: Redefining Future of Scientific Research",
+        "summary": "Google DeepMind 发布 Gemini Deep Think，在专家数学家和科学家的指导下，该模型在数学、物理和计算机科学的专业研究问题求解中取得突破，已在国际数学奥林匹克获得金牌标准。",
+        "key_points": ["在国际数学奥林匹克和大学计算机程序竞赛中取得金牌级表现", "专为解决现代科学、研究和工程挑战而设计的专业推理模式", "代表了 AI 在基础科学发现中的新里程碑"],
+        "url": "https://deepmind.com/blog/accelerating-mathematical-and-scientific-discovery-with-gemini-deep-think/",
+        "keywords": ["Gemini", "DeepThink", "科学研究", "数学", "AI"],
+        "quality_score": 5
+      },
+      {
+        "source_id": "websearch_ai",
+        "title": "OpenAI 完成 1100 亿美元融资轮次",
+        "summary": "OpenAI 宣布完成 1100 亿美元私人融资，包括亚马逊 500 亿美元、英伟达和软银各 300 亿美元投资，成为历史上规模最大的私人融资轮次之一。",
+        "key_points": ["总融资额达 1100 亿美元，创历史纪录", "亚马逊、英伟达、软银联合投资", "将进一步巩固 OpenAI 在 AI 领域的领先地位"],
+        "url": "https://techcrunch.com/2026/02/27/openai-raises-110b-in-one-of-the-largest-private-funding-rounds-in-history/",
+        "keywords": ["OpenAI", "融资", "投资", "AI"],
+        "quality_score": 5
+      },
+      {
+        "source_id": "websearch_ai",
+        "title": "Google 发布 Gemini 3.1 Pro 模型",
+        "summary": "Google 推出 Gemini 3.1 Pro，专为处理复杂任务设计，升级后的核心智能已推广至消费者和开发者产品，可通过 Gemini API、Vertex AI、Gemini 应用和 NotebookLM 访问。",
+        "key_points": ["专为需要复杂推理的任务设计", "在多个平台和产品中推出", "推动 agent 工作流程的发展"],
+        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-1-pro",
+        "keywords": ["Gemini", "3.1Pro", "Google", "AI"],
+        "quality_score": 4
+      },
+      {
+        "source_id": "websearch_ai",
+        "title": "Gemini 3 Deep Think 专为科学研究设计",
+        "summary": "Google 更新 Gemini 3 Deep Think，为解决现代科学、研究和工程挑战提供重大升级，Google AI Ultra 订阅用户可通过 Gemini 应用访问，研究者和企业可通过 Gemini API 申请早期访问。",
+        "key_points": ["Deep Think 团队更新的专业推理模式", "Ultra 订阅用户可立即使用", "研究者和企业可申请早期访问"],
+        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-3-deep-think/",
+        "keywords": ["Gemini", "DeepThink", "科学研究", "Google"],
+        "quality_score": 4
+      },
+      {
+        "source_id": "websearch_ai",
+        "title": "VAST Data 推出自学习 Agentic AI 平台",
+        "summary": "VAST Data 发布 VAST Data PolicyEngine 和 VAST Data TuningEngine，两项新的计算服务将允许下一代 AI 系统从全栈 agentic 计算平台转变为安全、可扩展的思考机器。",
+        "key_points": ["推出 PolicyEngine 和 TuningEngine 两项新服务", "构建安全、可信的自学习 agentic AI 系统", "从全栈 agentic 计算平台进化为思考机器"],
+        "url": "https://www.vastdata.com/press-releases/vast-data-unveils-secure-trusted-self-learning-agentic-ai",
+        "keywords": ["VASTData", "AgenticAI", "Platform", "安全"],
+        "quality_score": 4
+      },
+      {
+        "source_id": "websearch_ai",
+        "title": "AI 在 1000 个虚拟世界中学习更快",
+        "summary": "研究人员通过引入 Agent World（一种生成完全合成环境的新管道）来解决可靠训练自主 agent 的挑战，该系统能够创建 1000 个多样化的日常场景用于 agent 训练。",
+        "key_points": ["引入 Agent World 生成合成环境的管道", "能够创建 1000 个多样化日常场景", "代表了在 agent 训练方面的重大进步"],
+        "url": "https://quantumzeitgeist.com/artificial-faster-intelligence-learns-virtual-worlds/",
+        "keywords": ["AI", "训练", "虚拟世界", "agent"],
+        "quality_score": 4
+      },
+      {
+        "source_id": "websearch_ai",
+        "title": "Anthropic 的编码突破使其成为 AI 巨头",
+        "summary": "Anthropic 的 Claude Code 在公开发布一年后迅速在全球开发者中走红，使 Anthropic 成为所谓 vibe coding 产品新兴市场中价值十亿美元业务的领导者。",
+        "key_points": ["Claude Code 从副项目成长为十亿美元业务", "在软件开发者中迅速普及", "巩固了 Anthropic 在 AI 编程市场的领导地位"],
+        "url": "https://www.business-standard.com/amp/technology/tech-news/surprise-coding-breakthrough-that-made-anthropic-into-an-ai-juggernaut-126022100047_1.html",
+        "keywords": ["Anthropic", "ClaudeCode", "编程", "AI"],
+        "quality_score": 4
+      },
+      {
+        "source_id": "websearch_ai",
+        "title": "Fractal 推出 PiEvolve 进化 Agentic 引擎",
+        "summary": "Fractal 发布 PiEvolve，一个用于自主机器学习和科学发现的进化 agentic 引擎，在 2026 年 2 月 24 日宣布推出。",
+        "key_points": ["PiEvolve 是一个进化 agentic 引擎", "专注于自主机器学习和科学发现", "代表了 AI agent 技术的新进展"],
+        "url": "https://www.prnewswire.com/news-releases/fractal-launches-pievolve-an-evolutionary-agentic-engine-for-autonomous-machine-learning-and-scientific-discovery-302695385.html",
+        "keywords": ["Fractal", "PiEvolve", "AgenticAI", "进化"],
+        "quality_score": 3
+      },
+      {
+        "source_id": "websearch_ai",
+        "title": "HKUST AI 突破改善风暴预警",
+        "summary": "香港科技大学发布世界首个 AI 模型，可提前 4 小时预测严重雷暴和降雨，准确率提高 15% 以上， enabling 更早的救命预警。",
+        "key_points": ["世界首个预测严重雷暴和降雨的 AI 模型", "可提前 4 小时进行预测", "准确率提高 15% 以上"],
+        "url": "https://hkust.edu.hk/news/hkusts-ai-breakthrough-transforms-storm-forecasting-enabling-earlier-life-saving-warnings",
+        "keywords": ["HKUST", "AI", "天气预报", "灾害预警"],
+        "quality_score": 5
+      },
+      {
+        "source_id": "websearch_ai",
+        "title": "将定义 2026 年的 6 大 AI 突破",
+        "summary": "2026 年最重要的 AI 进展不会来自构建更大的模型，而是通过让 AI 系统更智能、更协作、更可靠。在 agent 互操作性、自验证和记忆方面的突破将把 AI 从孤立工具转变为集成系统。",
+        "key_points": ["最重要的进展不是构建更大的模型", "agent 互操作性、自验证和记忆是关键", "AI 将从孤立工具转变为集成系统"],
+        "url": "https://www.infoworld.com/article/4108092/6-ai-breakthroughs-that-will-define-2026.html",
+        "keywords": ["AI", "2026趋势", "突破", "agent"],
+        "quality_score": 4
+      },
+      {
+        "source_id": "websearch_programming",
+        "title": "Rust 工具在 2026 年主导 JavaScript 生态",
+        "summary": "JavaScript 生态系统正在经历一场深刻转变，通过用系统语言（主要是 Rust）重写核心工具，"原生速度"的承诺终于实现。Oxc、Biome.js 和 Rolldown 等替代方案展示了真正的性能提升。",
+        "key_points": ["通过 Rust 重写核心工具实现性能提升", "不是"革命"，而是效率驱动的实用转变", "性能提升是真实的，但生态系统仍在成熟"],
+        "url": "https://dev.to/dataformathub/deep-dive-why-rust-based-tooling-is-dominating-javascript-in-2026-3dbl",
+        "keywords": ["Rust", "JavaScript", "工具链", "性能"],
+        "quality_score": 5
+      },
+      {
+        "source_id": "websearch_programming",
+        "title": "Rust vs JavaScript & TypeScript：性能和 WebAssembly",
+        "summary": "现代团队经常在产品层使用 JS/TS，在底层使用 Rust，结合了速度和灵活性。Rust 采用正在加速，特别是在后端、基础设施和 Wasm 重型工作负载中。",
+        "key_points": ["混合 Rust + JS/TS 架构现在很常见", "Rust 在后端、基础设施和 Wasm 中采用加速", "JS/TS 仍主导 UI 和全栈灵活性"],
+        "url": "https://blog.jetbrains.com/rust/2026/01/27/rust-vs-javascript-typescript/",
+        "keywords": ["Rust", "JavaScript", "TypeScript", "WebAssembly"],
+        "quality_score": 4
+      },
+      {
+        "source_id": "websearch_programming",
+        "title": "Oxc：JavaScript 氧化编译工具链",
+        "summary": "JavaScript 生态系统存在工具性能问题。Babel 用单线程 JavaScript 解析代码，Terser 再次做同样的事情，ESLint 第三次解析。Oxc 项目解决了这个问题，提供了统一的高性能工具链。",
+        "key_points": ["解决了 JavaScript 工具链性能问题", "避免多次解析同一文件", "提供统一的高性能解析器和工具集"],
+        "url": "https://www.devtoolsguide.com/oxc-javascript-toolchain",
+        "keywords": ["Oxc", "JavaScript", "工具链", "Rust"],
+        "quality_score": 5
+      },
+      {
+        "source_id": "websearch_programming",
+        "title": "Rust vs Go vs TypeScript 后端：2026 年大辩论",
+        "summary": "2026 年后端语言选择变得更加重要。Rust、Go 和 TypeScript（通过 Node.js 和 Deno）主导高性能后端开发，各有明确定位，问题不再是"哪个最好"而是"哪个适合您的用例"。",
+        "key_points": ["三种语言主导高性能后端开发", "各有明确的使用场景", "需要根据具体用例选择合适的技术"],
+        "url": "https://coderush.montsoftware.com/blog/rust-vs-go-vs-typescript-backends-performance-safety-and-developer-experience",
+        "keywords": ["Rust", "Go", "TypeScript", "后端"],
+        "quality_score": 3
+      },
+      {
+        "source_id": "websearch_programming",
+        "title": "Script：运行如 Rust 的 JavaScript",
+        "summary": "Script 是一个新的 JavaScript 实现，以 Rust 的速度运行。该项目目前在预览阶段，大部分代码由人类编写，AI 用于加速重复任务和生成文档。",
+        "key_points": ["JavaScript 的实现，运行如 Rust", "项目由人类架构和实现决策驱动", "AI 仅用于特定任务以加速开发"],
+        "url": "https://docs.script-lang.org/blog/introducing-script",
+        "keywords": ["Script", "JavaScript", "Rust", "性能"],
+        "quality_score": 4
+      },
+      {
+        "source_id": "websearch_programming",
+        "title": "Bun vs Node.js vs Deno：2026 年 JavaScript 运行时之战",
+        "summary": "2026 年标志着服务器端 JavaScript 的决定性转折点。不再是单一的 "Node" 主导，进入了 Node.js 的稳定性、Deno 的标准合规安全性和 Bun 的激进性能最大主义三方秩序。",
+        "key_points": ["三个运行时有不同的设计哲学", "Node.js：经过战斗考验的稳定性", "Deno：标准合规的安全性，Bun：激进性能"],
+        "url": "https://www.refactor.website/javascript/bun-nodejs-deno-javascript-runtime-war-2026",
+        "keywords": ["Bun", "Node.js", "Deno", "JavaScript运行时"],
+        "quality_score": 3
+      },
+      {
+        "source_id": "websearch_security",
+        "title": "CISA 将两个已知利用漏洞添加到目录",
+        "summary": "美国网络安全和基础设施安全局 (CISA) 将两个已知利用漏洞添加到其目录，提醒 IT 专业人员和管理员注意最近的网络威胁。",
+        "key_points": ["添加两个已知利用漏洞到目录", "为 IT 专业人员提供检测和缓解建议", "帮助识别可能影响网络资产的网络威胁"],
+        "url": "https://www.cisa.gov/news-events/alerts/2026/02/25/cisa-adds-two-known-exploited-vulnerabilities-catalog",
+        "keywords": ["CISA", "安全", "漏洞", "CVE"],
+        "quality_score": 3
+      },
+      {
+        "source_id": "websearch_security",
+        "title": "2026 年 2 月补丁星期二：更新和分析",
+        "summary": "CrowdStrike 提供 2026 年 2 月补丁星期二的更新和分析，涵盖 Microsoft 发布的安全更新和其他厂商的关键修复。",
+        "key_points": ["分析 Microsoft 安全更新", "覆盖多个厂商的关键修复", "为安全团队提供补丁策略指导"],
+        "url": "https://www.crowdstrike.com/en-us/blog/patch-tuesday-analysis-february-2026/",
+        "keywords": ["补丁星期二", "Microsoft", "安全更新", "CrowdStrike"],
+        "quality_score": 3
+      },
+      {
+        "source_id": "websearch_security",
+        "title": "CVE-2026-20127：影响 Cisco Catalyst SD-WAN 的关键漏洞",
+        "summary": "加拿大网络安全中心发布警报，指出 Cisco Catalyst SD-WAN 中存在关键漏洞 (CVE-2026-20127)，该漏洞可能被威胁行为者利用。",
+        "key_points": ["Cisco Catalyst SD-WAN 存在关键漏洞", "可能被威胁行为者利用", "需要立即采取缓解措施"],
+        "url": "https://www.cyber.gc.ca/en/alerts-advisories/al26-004-critical-vulnerability-affecting-cisco-catalyst-sd-wan-cve-2026-20127",
+        "keywords": ["CVE-2026-20127", "Cisco", "SDWAN", "漏洞"],
+        "quality_score": 4
+      },
+      {
+        "source_id": "websearch_security",
+        "title": "Microsoft 2026 年 2 月安全建议",
+        "summary": "加拿大网络安全中心发布 Microsoft 2026 年 2 月度汇总建议，涵盖 .NET、Azure、GitHub Copilot 等多个产品的安全更新。",
+        "key_points": ["涵盖多个 Microsoft 产品的安全更新", "包括 .NET 10.0、8.0、9.0 关键更新", "Azure AI Language、Azure DevOps 等产品更新"],
+        "url": "https://www.cyber.gc.ca/en/alerts-advisories/microsoft-security-advisory-february-2026-monthly-rollup-av26-111",
+        "keywords": ["Microsoft", "安全建议", "2026年2月", "更新"],
+        "quality_score": 3
+      },
+      {
+        "source_id": "websearch_cloud",
+        "title": "2026 年云计算：AWS、Azure 和 Google Cloud 的新功能",
+        "summary": "云计算格局继续以惊人的速度演进，三大云提供商不断推出突破性更新，重塑组织如何处理数字基础设施的方法。",
+        "key_points": ["AWS、Azure、Google Cloud 持续推出新功能", "AI 集成是主要驱动力", "理解这些发展对维持竞争优势至关重要"],
+        "url": "https://eilglobal.com.au/cloud-computing-updates-whats-new-in-aws-azure-and-google-cloud/",
+        "keywords": ["云计算", "AWS", "Azure", "GoogleCloud"],
+        "quality_score": 2
+      },
+      {
+        "source_id": "websearch_cloud",
+        "title": "Azure Storage 2026：为 Agentic Scale 和云原生应用而构建",
+        "summary": "2025 年是 Azure Storage 的关键一年，2026 年将专注于帮助客户将 AI 转化为实际影响，将 Azure Storage 演变为支持完整 AI 生命周期的统一智能平台。",
+        "key_points": ["Azure Storage 演变为统一智能平台", "支持完整 AI 生命周期", "在企业规模上满足现代工作负载的性能需求"],
+        "url": "https://azure.microsoft.com/en-us/blog/beyond-boundaries-the-future-of-azure-storage-in-2026/",
+        "keywords": ["Azure", "Storage", "AI", "云计算"],
+        "quality_score": 4
+      },
+      {
+        "source_id": "websearch_cloud",
+        "title": "Google Cloud 在 Vertex AI 中扩展 Claude Opus 4.6",
+        "summary": "Google Cloud 宣布在 Vertex AI 上推出 Claude Opus 4.6 和 Claude Sonnet 4.6，进一步扩展其精选模型集合，为构建和扩展生产级 AI 应用和 agent 提供平台。",
+        "key_points": ["Claude Opus 4.6 和 Claude Sonnet 4.6 可用", "扩展 Vertex AI 的模型选择", "为生产级 AI 应用和 agent 优化平台"],
+        "url": "https://cloud.google.com/blog/products/ai-machine-learning/expanding-vertex-ai-with-claude-opus-4-6",
+        "keywords": ["GoogleCloud", "VertexAI", "Claude", "Opus4.6"],
+        "quality_score": 4
+      },
+      {
+        "source_id": "websearch_cloud",
+        "title": "Amazon、Microsoft 和 Alphabet 报告稳健云增长",
+        "summary": "Amazon、Microsoft 和 Alphabet 都报告了强劲的云增长，由 AI 需求上升驱动。Q4 全球云基础设施收入达到 1190 亿美元，同比增长 30%。",
+        "key_points": ["全球云基础设施收入同比增长 30%", "AWS 增长 24% 至 356 亿美元", "Google Cloud 增长 48% 至 177 亿美元，增长率最高"],
+        "url": "https://longbridge.com/en/news/275780603",
+        "keywords": ["云计算", "AWS", "Azure", "GoogleCloud", "增长"],
+        "quality_score": 5
+      },
+      {
+        "source_id": "websearch_tools",
+        "title": "GitHub Copilot CLI 现已正式发布",
+        "summary": "GitHub Copilot CLI——将 GitHub Copilot 的强大功能直接带到命令行的终端原生编码 agent——现已对所有 Copilot 订阅者正式发布，从终端助手发展为完整的 agentic 开发环境。",
+        "key_points": ["Copilot CLI 对所有订阅者正式发布", "从终端助手发展为完整 agentic 环境", "可规划、构建、审查并跨会话记忆"],
+        "url": "https://github.blog/changelog/2026-02-25-github-copilot-cli-is-now-generally-available",
+        "keywords": ["GitHub", "Copilot", "CLI", "AI工具"],
+        "quality_score": 4
+      },
+      {
+        "source_id": "websearch_tools",
+        "title": "Claude Code 2.0 发布：新的 Agentic 特性和团队模式",
+        "summary": "Anthropic 发布 Claude Code 2.0，主要更新将其从强大的单会话助手转变为完全 agentic 开发平台，引入持久记忆、团队协作和原生 CI/CD 集成。",
+        "key_points": ["从单会话助手转变为完全 agentic 平台", "引入持久记忆、团队协作、CI/CD 集成", "满足开发者社区前三大功能需求"],
+        "url": "https://claude5.ai/news/anthropic-claude-code-v2-agentic-features-launch",
+        "keywords": ["ClaudeCode", "2.0", "Agentic", "开发者工具"],
+        "quality_score": 5
+      },
+      {
+        "source_id": "websearch_tools",
+        "title": "VS Code 2026 年 1 月更新",
+        "summary": "VS Code 发布 2026 年 1 月更新 (版本 1.109)，引入 agent 技能作为斜杠命令、Claude 兼容性、agent 钩子等新功能，以及改进的后台 agent 消息引导和队列。",
+        "key_points": ["agent 技能作为斜杠命令", "Claude 配置文件兼容性", "agent 生命周期钩子和消息队列改进"],
+        "url": "https://code.visualstudio.com/updates/v1_109",
+        "keywords": ["VSCode", "更新", "agent", "Claude"],
+        "quality_score": 3
+      },
+      {
+        "source_id": "websearch_tools",
+        "title": "Tabnine 推出企业上下文引擎",
+        "summary": "Tabnine 发布企业上下文引擎通用可用性，该平台为 AI agent 提供系统的结构化理解，实现更安全的自动化和更准确的软件开发。",
+        "key_points": ["为 AI agent 提供系统的结构化理解", "实现更安全的自动化", "提供更准确的软件开发"],
+        "url": "https://www.globenewswire.com/news-release/2026/02/26/3245668/0/en/Tabnine-Launches-Enterprise-Context-Engine-Introducing-the-Missing-Layer-for-Reliable-Enterprise-AI.html",
+        "keywords": ["Tabnine", "企业", "AI", "上下文引擎"],
+        "quality_score": 3
+      },
+      {
+        "source_id": "websearch_tools",
+        "title": "Rovo Dev 现已在 VS Code 中正式发布",
+        "summary": "Atlassian 宣布 Rovo Dev 现已在 VS Code 中正式发布，该开发 agent 专注于团队协作和工作流集成。",
+        "key_points": ["Rovo Dev 在 VS Code 中正式发布", "专注于团队协作和工作流集成", "提供完整的开发生态体验"],
+        "url": "https://www.atlassian.com/blog/announcements/rovo-dev-now-generally-available-in-vs-code",
+        "keywords": ["Atlassian", "RovoDev", "VSCode", "开发工具"],
+        "quality_score": 2
+      }
+    ]
+  },
+
+  "errors": {
+    "items": []
+  },
+
+  "metadata": {
+    "environment": "local",
+    "agent_version": "3.0",
+    "worker_count": 0,
+    "parallel_enabled": false
+  }
+}
